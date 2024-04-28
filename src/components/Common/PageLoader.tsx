@@ -20,7 +20,7 @@ export default function PageLoader() {
   }, []);
 
   return (
-    <div className={`w-full max-w-[640px] h-lvh fixed top-0 left-0 bg-primaryColor place-content-center z-50 animate-[fadeout_1s_ease_5s_forwards] ${isClass}`}>
+    <div className={`w-full max-w-[640px] h-lvh fixed top-0 left-0 right-0 m-auto bg-primaryColor place-content-center z-50 animate-[fadeout_1s_ease_5s_forwards] ${isClass}`}>
       <div className="relative w-[140px] mx-auto h-[60px] mb-4">
         <div className="w-5 h-5 absolute rounded-full bg-tertiaryColor left-[15%] z-[1] [transform-origin:50%] animate-[circle_.5s_ease_0s_alternate_infinite]"></div>
         <div className="w-5 h-5 absolute rounded-full bg-tertiaryColor left-[calc(50%-10px)] z-[1] [transform-origin:50%] animate-[circle_.5s_ease_.2s_alternate_infinite]"></div>
