@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  /* --color-primary: #fff9e2;
+  --color-secondary: #FFE3FD;
+  --color-tertiary: #AA9C62;
+  --color-quaternary: #348077; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.nature{
+  --color-primary: #EDE4E0;
+  --color-secondary: #d1c4b8;
+  --color-tertiary: #9f8772;
+  --color-quaternary: #665A48;
+}
+
+.sky{
+  --color-primary: #F8FdFF;
+  --color-secondary: #a8daf3;
+  --color-tertiary: #749BC2;
+  --color-quaternary: #4682A9;
+}
+
+.girly{
+  --color-primary: #F9F5F6;
+  --color-secondary: #f8d5e2;
+  --color-tertiary: #F5A9B7;
+  --color-quaternary: #E17A9B;
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hidden-scrollbar {
+    -ms-overflow-style: none; /* IE, Edge 対応 */
+    scrollbar-width: none; /* Firefox 対応 */
+  }
+  .hidden-scrollbar::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display: none;
+  }
+}
+
