@@ -18,31 +18,23 @@ export default function Home() {
     <main className="max-w-[640px] w-full m-auto overflow-x-hidden">
       <PageLoader />
       <section className="mt-[60px] pt-10 relative z-10">
-        <ScrollReveal move="left" delay={200}>
-          <Profile />
-        </ScrollReveal>
-        <ScrollReveal move="left" delay={400}>
-          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">「デザインはあまり好きじゃない。」<br />
-            「でもコーディングは好き。」<br />
-            「プログラムも苦手だけど好き。」</p>
-        </ScrollReveal>
-        <ScrollReveal move="left" delay={600}>
-          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">でも、仕事って<br />
-            好き嫌いでするものじゃないから<br />
-            &nbsp;私は「私に出来る事」をする。</p>
-        </ScrollReveal>
-        <ScrollReveal move="left" delay={800}>
-          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">だけど、嫌いだったものが<br />
-            仕事の中で好きに変わったなら<br />
-            &nbsp;それはそれで良い事なんじゃないかな。</p>
-        </ScrollReveal>
+        <Profile />
+        <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">「デザインはあまり好きじゃない。」<br />
+          「でもコーディングは好き。」<br />
+          「プログラムも苦手だけど好き。」</p>
+        <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">でも、仕事って<br />
+          好き嫌いでするものじゃないから<br />
+          &nbsp;私は「私に出来る事」をする。</p>
+        <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">だけど、嫌いだったものが<br />
+          仕事の中で好きに変わったなら<br />
+          &nbsp;それはそれで良い事なんじゃないかな。</p>
 
         <div className="w-full px-[10%] py-7 relative mt-8 mx-auto">
           <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[10%] m-auto">
             <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[330px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
           </ScrollReveal>
 
-          <ScrollReveal move="left" delay={1000}>
+          <ScrollReveal move="left" delay={0}>
             <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-5 pb-1 px-2 flex gap-3">
               <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Design</li>
               <li className="w-10 aspect-square flex items-center">
