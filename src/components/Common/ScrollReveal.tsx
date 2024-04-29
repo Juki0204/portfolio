@@ -8,9 +8,10 @@ type Props = {
   move: string,
   delay: number,
   className?: string
+  id?: string
 }
 
-const ScrollReveal: NextPage<Props> = ({ children, move, delay, className }) => {
+const ScrollReveal: NextPage<Props> = ({ children, move, delay, className, id }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     async function animate() {
@@ -31,7 +32,7 @@ const ScrollReveal: NextPage<Props> = ({ children, move, delay, className }) => 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sectionRef]);
 
-  return <div className={`${className}`} ref={sectionRef}>{children}</div>;
+  return <div id={`${id}`} className={`${className}`} ref={sectionRef}>{children}</div>;
 }
 
 export default ScrollReveal;

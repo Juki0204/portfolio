@@ -5,7 +5,7 @@ import Btn from "@/components/Common/Btn";
 import SecTitle from "@/components/Common/SecTitle";
 import Blog from "@/components/Blog/Blog";
 import InfiniteSlide from "@/components/Common/InfinitSlide";
-import Contact from "@/components/Contact/Contact";
+// import Contact from "@/components/Contact/Contact";
 
 import PageLoader from "@/components/Common/PageLoader";
 
@@ -141,7 +141,7 @@ export default function Home() {
         <ul className="pb-3">
           <li className="w-full mb-10">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="http://hakuryusha.starfree.jp/" target="_blank" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/#site1" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/works/hakuryusha.jpg"
                   alt="有限会社 白龍社 様"
@@ -158,9 +158,28 @@ export default function Home() {
               </div>
             </ScrollReveal>
           </li>
+          <li className="w-full mb-10">
+            <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+              <Link href="/works/#site2" className="block relative w-full aspect-[16/9]">
+                <Image
+                  src="/img/works/naomaru.web.jpg"
+                  alt="ポートフォリオサイト"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </Link>
+            </ScrollReveal>
+            <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
+              <div className="">
+                <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Portfolio Site</p>
+                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
+                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
+              </div>
+            </ScrollReveal>
+          </li>
           <li className="w-full">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="https://naomaru-blog.vercel.app/" target="_blank" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/#site3" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/works/naomaru-blog.jpg"
                   alt="なおまるブログ"
@@ -187,8 +206,9 @@ export default function Home() {
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Contact" jp="おといあわせ" />
         </ScrollReveal>
-        <Contact />
-        <p className="py-10 text-center">準備中です</p>
+        <ScrollReveal move="bottom" delay={200}>
+          <p className="py-10 text-center">準備中です</p>
+        </ScrollReveal>
       </section>
 
     </main>

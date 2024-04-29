@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import SecTitle from "@/components/Common/SecTitle";
+import Btn from "@/components/Common/Btn";
 
 import ScrollReveal from "@/components/Common/ScrollReveal";
 
@@ -12,8 +13,8 @@ export default function Home() {
       <section className="mt-[60px] mb-5 pt-10 pb-5 relative z-10 text-center overflow-hidden">
         <SecTitle en="Works" jp="つくったもの" className="mb-5" />
         <ScrollReveal move="bottom" delay={0} className="p-7">
-          <div className="mb-3 rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-            <Link href="http://hakuryusha.starfree.jp" target="_blank" className="block relative w-full aspect-[16/9]">
+          <div id="site1" className="pt-16 -mt-16 mb-3">
+            <Link href="http://hakuryusha.starfree.jp" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/hakuryusha.jpg"
                 alt="有限会社 白龍社 様"
@@ -24,7 +25,7 @@ export default function Home() {
           </div>
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Corporate Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">コーポレートサイト｜有限会社 白龍社 様</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">有限会社 白龍社 様</p>
             <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding</p>
           </div>
           <ul>
@@ -45,11 +46,12 @@ export default function Home() {
               </div>
             </li>
           </ul>
+          <Btn link="http://hakuryusha.starfree.jp" text="サイトを見る" />
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={200} className="p-7">
-          <div className="mb-3 rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-            <Link href="https://naomaru-design.vercel.app" target="_blank" className="block relative w-full aspect-[16/9]">
+          <div id="site2" className="pt-16 -mt-16 mb-3">
+            <Link href="https://naomaru-design.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/naomaru.web.jpg"
                 alt="ポートフォリオサイト"
@@ -60,7 +62,7 @@ export default function Home() {
           </div>
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Portfolio Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作｜ポートフォリオサイト</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
             <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
           </div>
           <ul>
@@ -85,8 +87,8 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={200} className="p-7">
-          <div className="mb-3 rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-            <Link href="https://naomaru-blog.vercel.app" target="_blank" className="block relative w-full aspect-[16/9]">
+          <div id="site3" className="pt-16 -mt-16 mb-3">
+            <Link href="https://naomaru-blog.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/naomaru-blog.jpg"
                 alt="なおまるブログ"
@@ -97,7 +99,7 @@ export default function Home() {
           </div>
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Blog Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作｜なおまるブログ</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
             <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Programing</p>
           </div>
           <ul>
@@ -120,6 +122,7 @@ export default function Home() {
               </div>
             </li>
           </ul>
+          <Btn link="https://naomaru-blog.vercel.app" text="サイトを見る" />
         </ScrollReveal>
       </section>
     </main>
