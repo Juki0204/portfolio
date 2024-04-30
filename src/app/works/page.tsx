@@ -32,9 +32,12 @@ export default function Home() {
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
               <dl className="flex flex-wrap mb-4 w-11/12 mx-auto">
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Design 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">Photoshop</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Coding 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">HTML, SCSS</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Program 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">JavaScript</dd>
+                <dt className="w-2/5 text-sm leading-loose tracking-wide py-1 font-bold grid place-content-center border-b border-secondaryColor">【 Design 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Photoshop</dd>
+                <dt className="w-2/5 text-sm leading-loose tracking-wide py-1 font-bold grid place-content-center border-b border-secondaryColor">【 Coding 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">HTML, SCSS</dd>
+                <dt className="w-2/5 text-sm leading-loose tracking-wide py-1 font-bold grid place-content-center">【 Program 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold">JavaScript</dd>
               </dl>
             </li>
             <li>
@@ -69,9 +72,12 @@ export default function Home() {
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
               <dl className="flex flex-wrap mb-4 w-11/12 mx-auto">
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Program 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">TypeScript</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Framework 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">Next.js 14.1.4</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Library 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">Tailwind CSS, rss-parser, Swiper</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Program 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">TypeScript</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Framework 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Next.js v14.1.4, TailwindCSS</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center">【 Library 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold">rss-parser, Swiper, nodemailer</dd>
               </dl>
             </li>
             <li>
@@ -106,10 +112,14 @@ export default function Home() {
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
               <dl className="flex flex-wrap mb-4 w-11/12 mx-auto">
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Program 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">JavaScript</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Framework 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">Next.js 13.2.3</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Library 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">Emotion, Material UI</dd>
-                <dt className="w-2/5 text-sm leading-loose tracking-wide font-bold">【 Others 】</dt><dd className="w-3/5 text-sm leading-loose tracking-wide font-bold">microCMS</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Program 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">JavaScript</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Framework 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Next.js v13.2.3</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Library 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Emotion, Material UI</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center">【 Others 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold">microCMS</dd>
               </dl>
             </li>
             <li>
