@@ -15,8 +15,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 m-auto h-[60px] pl-8 pr-5 sm:px-0 flex justify-between items-center bg-opacity-70 z-50 sm:bg-secondaryColor sm:h-0 duration-500">
       <nav className={
-        isOpen ? "fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-100 h-svh duration-500 ease-in"
-          : `fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-0 h-svh duration-500 ease-in pointer-events-none 
+        isOpen ? "fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-100 h-lvh duration-500 ease-in"
+          : `fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-0 h-lvh duration-500 ease-in pointer-events-none 
               sm:pointer-events-auto sm:opacity-100 sm:bg-[transparent] sm:w-80 sm:top-auto sm:bottom-[300px] sm:h-auto sm:left-[calc(50vw+(640px/2)+20px)]`
       }>
         <ul className="p-5 flex flex-wrap font-bold">
