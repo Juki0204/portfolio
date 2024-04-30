@@ -6,7 +6,7 @@ type Props = {
   target?: "_blank"
 }
 
-export default function GradientBtn(props: Props) {
+export default function Btn(props: Props) {
   return (
     <button className="block mx-auto my-5 p-px border-none h-9 bg-tertiaryColor rounded-full cursor-pointer">
       <Link href={props.link} target={props.target} className="block rounded-full bg-transparent">

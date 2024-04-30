@@ -207,7 +207,7 @@ export default function Home() {
           <SecTitle en="Contact" jp="おといあわせ" />
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
-          <p className="py-10 text-center">準備中です</p>
+          <Btn link="/contact" text="Go To Contact" />
         </ScrollReveal>
       </section>
 
