@@ -18,6 +18,7 @@ export default function Home() {
     <main className="max-w-[640px] w-full m-auto overflow-x-hidden">
       <PageLoader />
       <section className="mt-[60px] pt-10 relative z-10">
+        <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         <Profile />
         <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">「デザインはあまり好きじゃない。」<br />
           「でもコーディングは好き。」<br />
@@ -118,7 +119,7 @@ export default function Home() {
 
       <section className="w-full p-7 mb-5 pr-0 relative">
         <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Blog" jp="ぶろぐ" />
@@ -132,8 +133,11 @@ export default function Home() {
       </section>
 
       <section className="w-full p-7 mb-5 relative">
-        <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[20%] m-auto">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[410px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+        <ScrollReveal move="right" delay={0} className="absolute top-[10%] -right-[20%] m-auto">
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[360px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+        </ScrollReveal>
+        <ScrollReveal move="left" delay={0} className="absolute top-[80%] -left-[20%] m-auto">
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[320px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Works" jp="つくったもの" />
