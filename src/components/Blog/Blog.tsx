@@ -20,7 +20,7 @@ export default async function Blog() {
     });
 
   return (
-    <div className="w-full">
+    <div className="w-full [&_.swiper-pagination]:pr-7">
       <BlogSlider blog={articles} />
     </div>
   );
