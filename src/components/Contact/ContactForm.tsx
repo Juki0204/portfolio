@@ -1,12 +1,38 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
+
+  const [nameErr, setNameErr] = useState<string>('hidden');
+  const [emailErr, setEmailErr] = useState<string>('hidden');
+  const [messageErr, setMessageErr] = useState<string>('hidden');
+  const pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$";
+
+  const [modalState, setModalState] = useState<string>('opacity-30');
+
+  const confirmName = () => {
+    name !== ''
+      ? setNameErr("hidden")
+      : setNameErr("block");
+  }
+
+  const confirmEmail = () => {
+    email.match(pattern) !== null
+      ? setEmailErr("hidden")
+      : setEmailErr("block");
+    console.log(email.match(pattern));
+  }
+
+  const confirmMessage = () => {
+    message !== ''
+      ? setMessageErr("hidden")
+      : setMessageErr("block");
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,6 +56,12 @@ export default function ContactForm() {
     }
   }
 
+  useEffect(() => {
+    if (name !== '' && email.match(pattern) !== null && message !== '') {
+      setModalState('opacity-100')
+    }
+  }, [name, email, message]);
+
   return (
     <div>
       <form onSubmit={handleSubmit} className="">
@@ -41,10 +73,13 @@ export default function ContactForm() {
             <input
               type="text"
               value={name}
+              placeholder="田中 太郎"
               onChange={(e) => setName(e.target.value)}
+              onBlur={confirmName}
               required
-              className="w-full h-10 rounded-full px-4 font-bold"
+              className="w-full h-10 rounded-full px-4 font-bold placeholder:text-[#ccc]"
             />
+            <span className={`inline-block ml-3 text-[#f33] text-xs ${nameErr}`}>お名前を入力して下さい。</span>
           </li>
           <li className="mb-5">
             <label className="inline-block font-bold ml-3 mb-1 relative
@@ -53,10 +88,13 @@ export default function ContactForm() {
             <input
               type="email"
               value={email}
+              placeholder="example@example.jp"
               onChange={(e) => setEmail(e.target.value)}
+              onBlur={confirmEmail}
               required
-              className="w-full h-10 rounded-full px-4 font-bold"
+              className="w-full h-10 rounded-full px-4 font-bold placeholder:text-[#ccc]"
             />
+            <span className={`inline-block ml-3 text-[#f33] text-xs ${emailErr}`}>メールアドレスを正しく入力して下さい。</span>
           </li>
           <li>
             <label className="inline-block font-bold ml-3 mb-1 relative
@@ -64,14 +102,17 @@ export default function ContactForm() {
               after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">お問い合わせ内容</label>
             <textarea
               value={message}
+              placeholder="お問い合わせ内容を入力して下さい。"
               onChange={(e) => setMessage(e.target.value)}
+              onBlur={confirmMessage}
               required
-              className="w-full h-80 rounded-[20px] text-sm px-4 py-3 font-bold text-justify"
+              className="w-full h-80 rounded-[20px] text-sm px-4 py-3 font-bold text-justify placeholder:text-[#ccc]"
             ></textarea>
+            <span className={`inline-block ml-3 text-[#f33] text-xs ${messageErr}`}>お問い合わせ内容を入力して下さい。</span>
           </li>
         </ul>
 
-        <div onClick={handleModal} className="inline-block mx-auto my-5 p-px border-none h-9 bg-tertiaryColor rounded-full cursor-pointer">
+        <div onClick={handleModal} className={`inline-block mx-auto my-5 p-px border-none h-9 bg-tertiaryColor rounded-full cursor-pointer ${modalState}`}>
           <span className="flex text-base font-extralight text-primaryColor leading-[30px] px-14 pb-1 relative
             after:content-[''] after:w-2 after:h-2 after:rotate-45 after:absolute after:right-3 after:top-0 after:bottom-0 after:m-auto after:border-white after:border-t after:border-r
             ">
@@ -96,6 +137,8 @@ export default function ContactForm() {
                 <div className="h-72 overflow-y-auto">{message}</div>
               </li>
             </ul>
+
+            <p className="font-bold mb-5 text-xs">※情報が正しく入力されていない場合メールが届きません。記入内容をご確認の上、ご送信下さい。</p>
 
             <div className="flex justify-center">
               <div onClick={handleModal} className="inline-block w-[calc((100%-16px)/2)] p-px border-none h-9 bg-quaternaryColor rounded-[50px_0_0_50px] cursor-pointer">
