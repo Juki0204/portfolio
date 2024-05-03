@@ -25,10 +25,15 @@ const ScrollReveal: NextPage<Props> = ({ children, move, delay, className, id })
           origin: move,
           distance: "30px",
           viewFactor: 0.2,
+          afterReveal: function () {
+            sectionRef.current !== null ? sectionRef.current.setAttribute("style", "") : false;
+          }
         });
       }
     }
+
     animate();
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sectionRef]);
 

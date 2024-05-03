@@ -64,7 +64,7 @@ export default function ContactForm() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="">
+      <form onSubmit={handleSubmit} className="text-center">
         <ul className="w-full text-left max-w-[400px] mx-auto">
           <li className="mb-5">
             <label className="inline-block font-bold ml-3 mb-1 relative

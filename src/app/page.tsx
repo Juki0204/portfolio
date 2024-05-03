@@ -5,7 +5,7 @@ import Btn from "@/components/Common/Btn";
 import SecTitle from "@/components/Common/SecTitle";
 import Blog from "@/components/Blog/Blog";
 import InfiniteSlide from "@/components/Common/InfinitSlide";
-// import Contact from "@/components/Contact/Contact";
+import ContactForm from "@/components/Contact/ContactForm";
 
 import PageLoader from "@/components/Common/PageLoader";
 
@@ -118,6 +118,7 @@ export default function Home() {
       <InfiniteSlide elem={'source code. Writing "beautiful"source code means "designing"'} speed={45000} className="[&_.swiper-slide]:leading-[1.3] w-[110%] translate-x-[-5%] opacity-30 !pb-5" />
 
       <section className="w-full p-7 mb-5 pr-0 relative">
+
         <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
@@ -206,12 +207,13 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="w-full p-7 mb-5">
+      <section className="w-full p-7 mb-5 overflow-hidden">
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Contact" jp="おといあわせ" />
         </ScrollReveal>
+        {/* <Btn link="/contact" text="Go To Contact" /> */}
         <ScrollReveal move="bottom" delay={200}>
-          <Btn link="/contact" text="Go To Contact" />
+          <ContactForm />
         </ScrollReveal>
       </section>
 
