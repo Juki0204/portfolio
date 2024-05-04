@@ -22,21 +22,21 @@
 }
 
 .nature{
-  --color-primary: #EDE4E0;
+  --color-primary: #e9e4e1;
   --color-secondary: #d1c4b8;
   --color-tertiary: #9f8772;
   --color-quaternary: #665A48;
 }
 
 .sky{
-  --color-primary: #F8FdFF;
+  --color-primary: #ecf4f7;
   --color-secondary: #a8daf3;
   --color-tertiary: #749BC2;
   --color-quaternary: #4682A9;
 }
 
 .girly{
-  --color-primary: #F9F5F6;
+  --color-primary: #fdeef2;
   --color-secondary: #f8d5e2;
   --color-tertiary: #F5A9B7;
   --color-quaternary: #E17A9B;

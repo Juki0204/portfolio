@@ -121,7 +121,7 @@ export default function ContactForm() {
         </div>
 
         <div className={isModal ? "opacity-100 duration-500 pointer-events-auto w-full max-w-[640px] h-lvh fixed top-0 left-0 right-0 mx-auto bg-opacity-30 bg-[black] z-50" : "opacity-0 duration-500 pointer-events-none w-full max-w-[640px] h-lvh fixed top-0 left-0 right-0 mx-auto bg-opacity-30 bg-[black] -z-10"}>
-          <div className="w-[88%] max-w-[400px] mt-20 p-[20px_24px_32px] mx-auto rounded-[20px] bg-primaryColor">
+          <div className="w-[88%] absolute top-0 bottom-0 left-0 right-0 m-auto p-[20px_24px_32px] h-min rounded-[20px] bg-primaryColor">
             <h2 className="font-bold text-xl mb-5">内容確認</h2>
             <ul className="w-full text-left">
               <li className="mb-5">

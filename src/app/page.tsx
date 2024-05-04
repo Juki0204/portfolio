@@ -15,10 +15,10 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <main className="max-w-[640px] w-full m-auto overflow-x-hidden">
+    <main className="w-full m-auto overflow-x-hidden">
       <PageLoader />
-      <section className="mt-[60px] pt-10 relative z-10">
-        <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] -z-10 pointer-events-none"></div>
+      <section className="max-w-[640px] mx-auto mt-[60px] pt-10 relative z-10">
+        <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] pointer-events-none"></div>
         <Profile />
         <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">「デザインはあまり好きじゃない。」<br />
           「でもコーディングは好き。」<br />
@@ -30,8 +30,8 @@ export default function Home() {
           仕事の中で好きに変わったなら<br />
           &nbsp;それはそれで良い事なんじゃないかな。</p>
 
-        <div className="w-full px-[10%] py-7 relative mt-8 mx-auto">
-          <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[10%] m-auto -z-10 pointer-events-none">
+        <div className="w-full px-[10%] py-7 mt-8 mx-auto pb-[40%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg1.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+          <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[10%] m-auto pointer-events-none">
             <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[330px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
           </ScrollReveal>
 
@@ -117,9 +117,8 @@ export default function Home() {
       <InfiniteSlide elem={'source code means "designing"source code. Writing "beautiful"'} speed={60000} className="[&_.swiper-slide]:leading-[1.3] [&_.swiper-slide_p]:text-secondaryColor w-[110%] translate-x-[-5%] -mb-28 opacity-30" />
       <InfiniteSlide elem={'source code. Writing "beautiful"source code means "designing"'} speed={45000} className="[&_.swiper-slide]:leading-[1.3] w-[110%] translate-x-[-5%] opacity-30 !pb-5" />
 
-      <section className="w-full p-7 mb-5 pr-0 relative">
-
-        <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto -z-10 pointer-events-none">
+      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 pb-[30%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+        <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
@@ -133,11 +132,11 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="w-full p-7 mb-5 relative">
-        <ScrollReveal move="right" delay={0} className="absolute top-[10%] -right-[20%] m-auto -z-10 pointer-events-none">
+      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pb-[30%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg3.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+        <ScrollReveal move="right" delay={0} className="absolute top-[10%] -right-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[360px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
-        <ScrollReveal move="left" delay={0} className="absolute top-[80%] -left-[20%] m-auto -z-10 pointer-events-none">
+        <ScrollReveal move="left" delay={0} className="absolute top-[65%] -left-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[320px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
@@ -207,15 +206,15 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="w-full p-7 relative overflow-hidden">
-        <ScrollReveal move="right" delay={0} className="absolute top-[60%] -right-[20%] m-auto -z-10 pointer-events-none">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[500px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+      <section className="max-w-[640px] mx-auto w-full p-7 pb-[20%] relative overflow-hidden">
+        <ScrollReveal move="right" delay={0} className="absolute top-[10%] left-1/2 -translate-x-1/2 m-auto pointer-events-none">
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[160vw] max-w-[700px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Contact" jp="おといあわせ" />
         </ScrollReveal>
         {/* <Btn link="/contact" text="Go To Contact" /> */}
-        <ScrollReveal move="bottom" delay={200}>
+        <ScrollReveal move="bottom" delay={200} className="relative z-10">
           <ContactForm />
         </ScrollReveal>
       </section>
