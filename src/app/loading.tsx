@@ -5,9 +5,9 @@ const loading = () => {
         <div className="w-5 h-5 absolute rounded-full bg-tertiaryColor left-[15%] z-[1] [transform-origin:50%] animate-[circle_.5s_ease_0s_alternate_infinite]"></div>
         <div className="w-5 h-5 absolute rounded-full bg-tertiaryColor left-[calc(50%-10px)] z-[1] [transform-origin:50%] animate-[circle_.5s_ease_.2s_alternate_infinite]"></div>
         <div className="w-5 h-5 absolute rounded-full bg-tertiaryColor right-[15%] z-[1] [transform-origin:50%] animate-[circle_.5s_ease_.5s_alternate_infinite]"></div>
-        <div className="w-5 h-1 absolute rounded-full bg-[rgba(0,0,0,0.2)] top-[62px] [transform-origin:50%] left-[15%] blur-[1px] animate-[shadow_.5s_ease_.1s_alternate_infinite]"></div>
-        <div className="w-5 h-1 absolute rounded-full bg-[rgba(0,0,0,0.2)] top-[62px] [transform-origin:50%] left-[calc(50%-10px)] blur-[1px] animate-[shadow_.5s_ease_.3s_alternate_infinite]"></div>
-        <div className="w-5 h-1 absolute rounded-full bg-[rgba(0,0,0,0.2)] top-[62px] [transform-origin:50%] right-[15%] blur-[1px] animate-[shadow_.5s_ease_.6s_alternate_infinite]"></div>
+        <div className="w-5 h-1 absolute rounded-full bg-secondaryColor top-[62px] [transform-origin:50%] left-[15%] blur-[1px] animate-[shadow_.5s_ease_.1s_alternate_infinite]"></div>
+        <div className="w-5 h-1 absolute rounded-full bg-secondaryColor top-[62px] [transform-origin:50%] left-[calc(50%-10px)] blur-[1px] animate-[shadow_.5s_ease_.3s_alternate_infinite]"></div>
+        <div className="w-5 h-1 absolute rounded-full bg-secondaryColor top-[62px] [transform-origin:50%] right-[15%] blur-[1px] animate-[shadow_.5s_ease_.6s_alternate_infinite]"></div>
       </div>
       <p className="overflow-hidden text-center">
         <span className="text-2xl mx-0.5 font-bold inline-block -translate-y-8 [transform-origin:bottom] animate-[textEntering_2.5s_ease-in-out_0s_infinite]">L</span>
