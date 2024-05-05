@@ -75,7 +75,7 @@ export default function ContactForm() {
             <input
               type="text"
               value={name}
-              placeholder="田中 太郎"
+              placeholder="出座院 作郎"
               onChange={(e) => setName(e.target.value)}
               onBlur={confirmName}
               required
@@ -90,7 +90,7 @@ export default function ContactForm() {
             <input
               type="email"
               value={email}
-              placeholder="example@example.jp"
+              placeholder="cording@daisuki.jp"
               onChange={(e) => setEmail(e.target.value)}
               onBlur={confirmEmail}
               required

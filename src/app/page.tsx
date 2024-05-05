@@ -11,13 +11,14 @@ import PageLoader from "@/components/Common/PageLoader";
 
 import ScrollReveal from "@/components/Common/ScrollReveal";
 import Link from "next/link";
+import ScrollParalax from "@/components/Common/ScrollParalax";
 
 export default function Home() {
 
   return (
     <main className="w-full m-auto overflow-x-hidden">
       <PageLoader />
-      <section className="max-w-[640px] mx-auto mt-[60px] pt-10 relative z-10">
+      <section className="max-w-[640px] mx-auto mt-[60px] pt-10 relative z-10 bg-primaryColor">
         <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] pointer-events-none"></div>
         <Profile />
         <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">「デザインはあまり好きじゃない。」<br />
@@ -30,7 +31,10 @@ export default function Home() {
           仕事の中で好きに変わったなら<br />
           &nbsp;それはそれで良い事なんじゃないかな。</p>
 
-        <div className="w-full px-[10%] py-7 mt-8 mx-auto pb-[40%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg1.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+        <InfiniteSlide elem={'source code means "designing"source code. Writing "beautiful"'} speed={60000} className="[&_.swiper-slide]:leading-[1.3] [&_.swiper-slide_p]:text-secondaryColor w-[110%] translate-x-[-5%] -mb-28 opacity-30" />
+        <InfiniteSlide elem={'source code. Writing "beautiful"source code means "designing"'} speed={45000} className="[&_.swiper-slide]:leading-[1.3] w-[110%] translate-x-[-5%] opacity-30 " />
+
+        <div className="w-full px-[10%] py-7 mt-8 mx-auto relative">
           <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[10%] m-auto pointer-events-none">
             <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[330px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
           </ScrollReveal>
@@ -117,12 +121,12 @@ export default function Home() {
             <Btn link="/about" text="and more" />
           </ScrollReveal>
         </div>
+        <ScrollParalax className="mix-blend-color-burn mb-10">
+          <div className="w-[200%] aspect-[1280/268] bg-[url('/img/main/section_bg1.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:50%_auto] -translate-x-1/4"></div>
+        </ScrollParalax>
       </section>
 
-      <InfiniteSlide elem={'source code means "designing"source code. Writing "beautiful"'} speed={60000} className="[&_.swiper-slide]:leading-[1.3] [&_.swiper-slide_p]:text-secondaryColor w-[110%] translate-x-[-5%] -mb-28 opacity-30" />
-      <InfiniteSlide elem={'source code. Writing "beautiful"source code means "designing"'} speed={45000} className="[&_.swiper-slide]:leading-[1.3] w-[110%] translate-x-[-5%] opacity-30 !pb-5" />
-
-      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 pb-[40%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 relative bg-primaryColor">
         <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
@@ -135,9 +139,13 @@ export default function Home() {
         <ScrollReveal move="bottom" delay={200} className="pr-7">
           <Btn link="https://naomaru-blog.vercel.app" target="_blank" text="and more" />
         </ScrollReveal>
+
+        <ScrollParalax className="mix-blend-color-burn mt-10" posX="30%">
+          <div className="w-[200%] aspect-[1280/262] bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:50%_auto] -translate-x-1/2"></div>
+        </ScrollParalax>
       </section>
 
-      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pb-[30%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg3.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 relative bg-primaryColor">
         <ScrollReveal move="right" delay={0} className="absolute top-[10%] -right-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[360px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
@@ -209,6 +217,10 @@ export default function Home() {
         <ScrollReveal move="bottom" delay={200}>
           <Btn link="/works" text="and more" />
         </ScrollReveal>
+
+        <ScrollParalax className="mix-blend-color-burn mt-16">
+          <div className="w-[200%] aspect-[1280/164] bg-[url('/img/main/section_bg3.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:50%_auto] -translate-x-1/4"></div>
+        </ScrollParalax>
       </section>
 
       <section className="max-w-[640px] mx-auto w-full p-7 pb-[20%] relative overflow-hidden">

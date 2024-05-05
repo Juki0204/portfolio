@@ -51,7 +51,7 @@ export default function Footer() {
       </ul>
       <div onClick={returnTop} className="relative pb-4 h-[150px] w-[150px] aspect-[1/1] opacity-90
         before:content-['JUMP'] before:text-xs before:tracking-widest before:text-primaryColor before:leading-normal before:font-bold before:pl-5 before:w-15 before:inline-block before:border-b-primaryColor before:border-b-2 before:rotate-90 before:absolute before:bottom-8 before:right-1
-        after:w-2 after:h-4 after:[clip-path:polygon(0%_0%,0%_100%,100%_100%)] after:block after:bg-primaryColor after:absolute after:bottom-[57px] after:right-[33px]">
+        after:w-2 after:h-4 after:[clip-path:polygon(0%_0%,0%_100%,100%_100%)] after:block after:bg-primaryColor after:absolute after:bottom-[58px] after:right-[34px]">
         <Image
           src="/img/common/profile.png"
           alt="なおまる"

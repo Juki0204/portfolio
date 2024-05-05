@@ -77,7 +77,7 @@ export default function Home() {
                 <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Framework 】</dt>
                 <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Next.js v14.1.4, TailwindCSS</dd>
                 <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center">【 Library 】</dt>
-                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold">rss-parser, Swiper, nodemailer</dd>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold">rss-parser, Swiper, nodemailer, GSAP</dd>
               </dl>
             </li>
             <li>

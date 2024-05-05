@@ -99,9 +99,9 @@ export default function Home() {
 
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
           <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">メインは基本的にPhotoshop一択。<br />
-            バナーデザインからポスター制作までPhotoshop一つで全部やっちゃう。</p>
-          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">サイトデザイン時はFigma。<br />
-            XDがAdobeに見捨てられるまではXD使ってたけど、未来がないなら乗り換えるしかないよね、と。</p>
+            バナーデザインからポスター制作までPhotoshop一つで全部やります。</p>
+          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">サイトデザイン時はFigmaを使います。<br />
+            ピクセルパーフェクト前提のデザインはあまり作らず、コーディングしながら適宜調整する前提でベースデザインのみ作成します。</p>
         </ScrollReveal>
 
         <ScrollReveal move="right" delay={0} className="absolute top-[30%] bottom-0 -left-[10%] m-auto">
@@ -143,6 +143,7 @@ export default function Home() {
             cssはSass(SCSS)で書く事がほとんど。<br />
             実務ではSCSSにBEM記法のセットを起用する事が多い為自然とその形に。</p>
           <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">階層構造、コンテンツモデルは最大限意識して書いてるつもり。SEO周りは最低限意識して書きますが知識量としてはやや弱め。</p>
+          <p>WordPressは使えなくはないですが普段は殆ど使っていません。指定あればハードコーディングしてからオリジナルテーマでの実装程度は可能です。</p>
         </ScrollReveal>
 
         <ScrollReveal move="right" delay={0} className="absolute top-[70%] bottom-0 -right-[10%] m-auto">
@@ -181,10 +182,10 @@ export default function Home() {
 
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
           <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">実務ではJavaScriptのみ。<br />
-            脱jQueryの民なので自分ではjQuery書きません。指示があれば技術力的にはバニラと同じぐらいは書けます。</p>
-          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">趣味でReactやNext.js書いたり。<br />
-            実務ではTypeScript使わないので、React/Next.jsの時だけ。まだまだ勉強中…React介すと途端に型定義が難しく感じる。<br />
-            このサイトもNext.js＆TypeScriptで制作しています。</p>
+            脱jQueryの民なので基本的に新規ではjQuery書きません。指定があれば技術力的にはバニラと同じぐらいは書けますので対応可能です。</p>
+          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">あとは趣味でReactやNext.js書いたり。<br />
+            実務ではTypeScriptは使わないので、React/Next.jsの時だけ。まだまだ勉強中。<br />
+            このサイトもNext.js&amp;TypeScriptで制作しています。</p>
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200}>
@@ -204,7 +205,7 @@ export default function Home() {
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
           <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">2023年6月28日<br />
             WEBデザイン技能検定2級　取得</p>
-          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">Web業界唯一の国家資格だそうです。<br />
+          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">Web業界唯一の国家資格。<br />
             界隈は資格より実績・技能の方が評価されがちだけど、自分の腕試しという意味でも何か資格持っておきたいと思い挑戦。</p>
           <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">実務メイン故に公開可能な実績が少ない為、技術力の指標になればと。</p>
         </ScrollReveal>
