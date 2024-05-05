@@ -25,10 +25,10 @@ export default function Profile() {
           </Link>
         </li>
         <li className="w-10 aspect-square">
-          <Link href="https://bsky.app/profile/naomaru0204.bsky.social">
+          <Link href="https://bskyblue.app/profile/naomaru0204.bskyblue.social">
             <Image
               src="/img/common/bluesky_icon.png"
-              alt="bluesky"
+              alt="blueskyblue"
               width={50}
               height={55}
             />

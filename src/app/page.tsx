@@ -44,6 +44,7 @@ export default function Home() {
                   alt="photoshop"
                   width={50}
                   height={50}
+                  className="animate-[jumpInterval_5s_ease_0s_infinite]"
                 />
               </li>
               <li className="w-10 aspect-square flex items-center">
@@ -63,6 +64,7 @@ export default function Home() {
                   alt="html"
                   width={50}
                   height={50}
+                  className="animate-[jumpInterval_4s_ease_4.5s_infinite]"
                 />
               </li>
               <li className="w-10 aspect-square flex items-center">
@@ -71,6 +73,7 @@ export default function Home() {
                   alt="css"
                   width={50}
                   height={50}
+                  className="animate-[jumpInterval_4.5s_ease_2s_infinite]"
                 />
               </li>
               <li className="w-10 aspect-square flex items-center">
@@ -79,6 +82,7 @@ export default function Home() {
                   alt="sass"
                   width={50}
                   height={50}
+                  className="animate-[jumpInterval_5s_ease_6s_infinite]"
                 />
               </li>
             </ul>
@@ -90,6 +94,7 @@ export default function Home() {
                   alt="javascript"
                   width={50}
                   height={50}
+                  className="animate-[jumpInterval_5s_ease_2s_infinite]"
                 />
               </li>
               <li className="w-10 aspect-square flex items-center">
@@ -117,7 +122,7 @@ export default function Home() {
       <InfiniteSlide elem={'source code means "designing"source code. Writing "beautiful"'} speed={60000} className="[&_.swiper-slide]:leading-[1.3] [&_.swiper-slide_p]:text-secondaryColor w-[110%] translate-x-[-5%] -mb-28 opacity-30" />
       <InfiniteSlide elem={'source code. Writing "beautiful"source code means "designing"'} speed={45000} className="[&_.swiper-slide]:leading-[1.3] w-[110%] translate-x-[-5%] opacity-30 !pb-5" />
 
-      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 pb-[30%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
+      <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 pb-[40%] relative bg-primaryColor bg-blend-color-burn bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-no-repeat bg-[length:98%_auto]">
         <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
@@ -143,7 +148,7 @@ export default function Home() {
           <SecTitle en="Works" jp="つくったもの" />
         </ScrollReveal>
         <ul className="pb-3">
-          <li className="w-full mb-10">
+          <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Link href="/works/#site1" className="block relative w-full aspect-[16/9]">
                 <Image
@@ -162,7 +167,7 @@ export default function Home() {
               </div>
             </ScrollReveal>
           </li>
-          <li className="w-full mb-10">
+          <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Link href="/works/#site2" className="block relative w-full aspect-[16/9]">
                 <Image
@@ -181,7 +186,7 @@ export default function Home() {
               </div>
             </ScrollReveal>
           </li>
-          <li className="w-full">
+          <li className="w-full duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Link href="/works/#site3" className="block relative w-full aspect-[16/9]">
                 <Image

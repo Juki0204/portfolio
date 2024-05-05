@@ -17,35 +17,35 @@ export default function Header() {
       <nav className={
         isOpen ? "fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-100 h-lvh duration-500 ease-in"
           : `fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-0 h-lvh duration-500 ease-in pointer-events-none 
-              lg:pointer-events-auto lg:opacity-100 lg:bg-[transparent] lg:w-80 lg:top-auto lg:bottom-[300px] lg:h-auto lg:left-[calc(50vw+(640px/2)+20px)]`
+              lg:pointer-events-auto lg:opacity-100 lg:bg-[transparent] lg:w-80 lg:top-auto lg:bottom-[300px] lg:h-auto lg:left-[calc(50vw+(640px/2)+30px)]`
       }>
-        <ul className="p-5 flex flex-wrap font-bold">
+        <ul className="p-5 relative flex flex-wrap font-bold lg:bg-primaryColor lg:rounded-[20px] lg:pt-16 lg:pl-10 lg:after:content-['MENU'] lg:after:text-quaternaryColor lg:after:block lg:after:text-2xl lg:after:tracking-widest lg:after:absolute lg:after:top-6 lg:after:left-0 lg:after:right-0 lg:after:m-auto lg:after:text-center">
           <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[300ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100"}>
+            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="/" className="text-xl text-quaternaryColor tracking-wider">
               TOP <span className="text-sm">とっぷぺーじ</span>
             </Link>
           </li>
           <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[500ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100"}>
+            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="/about/" className="text-xl text-quaternaryColor tracking-wider">
               ABOUT <span className="text-sm">なおまるについて</span>
             </Link>
           </li>
           <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[700ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100"}>
+            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="/works/" className="text-xl text-quaternaryColor tracking-wider">
               WORKS <span className="text-sm">つくったもの</span>
             </Link>
           </li>
           <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[900ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100"}>
+            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="https://naomaru-blog.vercel.app/" target="_blank" className="text-xl text-quaternaryColor tracking-wider">
               BLOG <span className="text-sm">ぶろぐ</span>
             </Link>
           </li>
           <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[1100ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100"}>
+            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="/contact/" className="text-xl text-quaternaryColor tracking-wider">
               CONTACT <span className="text-sm">おといあわせ</span>
             </Link>
@@ -83,18 +83,18 @@ export default function Header() {
         </li>
         <li className="px-5 w-full h-min flex gap-6">
 
-          <div onClick={() => setIsTheme('nature')}>
-            <div className="w-8 h-8 rounded-full bg-[#9F8772] mx-auto my-1"></div>
-            <p className="text-center text-quaternaryColor">Nature</p>
+          <div onClick={() => setIsTheme('natural')}>
+            <div className="w-8 h-8 rounded-full bg-[#9F8772] mx-auto my-1 duration-300 lg:hover:scale-110"></div>
+            <p className="text-center text-quaternaryColor">Natural</p>
           </div>
 
-          <div onClick={() => setIsTheme('sky')}>
-            <div className="w-8 h-8 rounded-full bg-[#749BC2] mx-auto my-1"></div>
-            <p className="text-center text-quaternaryColor">Sky</p>
+          <div onClick={() => setIsTheme('skyblue')}>
+            <div className="w-8 h-8 rounded-full bg-[#749BC2] mx-auto my-1 duration-300 lg:hover:scale-110"></div>
+            <p className="text-center text-quaternaryColor">SkyBlue</p>
           </div>
 
           <div onClick={() => setIsTheme('girly')}>
-            <div className="w-8 h-8 rounded-full bg-[#E17A9B] mx-auto my-1"></div>
+            <div className="w-8 h-8 rounded-full bg-[#E17A9B] mx-auto my-1 duration-300 lg:hover:scale-110"></div>
             <p className="text-center text-quaternaryColor">Girly</p>
           </div>
 

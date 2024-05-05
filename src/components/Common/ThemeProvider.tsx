@@ -8,18 +8,18 @@ type Props = {
 }
 
 type Context = {
-  isTheme: "nature" | "sky" | "girly",
-  setIsTheme: Dispatch<SetStateAction<"nature" | "sky" | "girly">>,
+  isTheme: "natural" | "skyblue" | "girly",
+  setIsTheme: Dispatch<SetStateAction<"natural" | "skyblue" | "girly">>,
 }
 
 export const IsThemeContext = createContext({
-  isTheme: "nature",
+  isTheme: "natural",
   setIsTheme: (theme: any) => theme,
 });
 
 export const ThemeProvider = ({ children }: Props) => {
-  // const [isTheme, setIsTheme] = useState<Context['isTheme']>('nature');
-  const [isTheme, setIsTheme] = useLocalStrage('isTheme', 'nature');
+  // const [isTheme, setIsTheme] = useState<Context['isTheme']>('natural');
+  const [isTheme, setIsTheme] = useLocalStrage('isTheme', 'natural');
 
   return (
     <IsThemeContext.Provider value={{ isTheme, setIsTheme }}>

@@ -6,7 +6,7 @@ export const useLocalStrage = (key: string, initialValue: string): [string, Disp
   //   const keyValue = localStorage.getItem(key);
   //   return keyValue ? JSON.parse(keyValue) : initialValue;
   // });
-  const [value, setValue] = useState("nature");
+  const [value, setValue] = useState("natural");
 
   useEffect(() => {
     const keyValue: string | null = localStorage.getItem(key);

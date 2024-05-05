@@ -1,7 +1,25 @@
+"use client";
+
+import { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
+  const [anim, setAnim] = useState<string>('');
+
+  const returnTop = () => {
+    setAnim("animate-[jump_0.5s_linear_0s_forwards]");
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      setAnim("");
+    }, 500);
+  }
+
   return (
     <footer className="bg-tertiaryColor p-7 pb-1 rounded-[30px_30px_0_0] flex flex-wrap justify-center bg-[url('/img/common/footer_bg.png')] bg-[position:center_bottom_24px] bg-no-repeat bg-[length:98%_auto] bg-blend-luminosity">
       <ul className="pl-4 pb-4 w-min">
@@ -31,13 +49,15 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
-      <div className="relative pb-4 h-[150px] w-[150px] aspect-[1/1] opacity-90 overflow-hidden">
+      <div onClick={returnTop} className="relative pb-4 h-[150px] w-[150px] aspect-[1/1] opacity-90
+        before:content-['JUMP'] before:text-xs before:tracking-widest before:text-primaryColor before:leading-normal before:font-bold before:pl-5 before:w-15 before:inline-block before:border-b-primaryColor before:border-b-2 before:rotate-90 before:absolute before:bottom-8 before:right-1
+        after:w-2 after:h-4 after:[clip-path:polygon(0%_0%,0%_100%,100%_100%)] after:block after:bg-primaryColor after:absolute after:bottom-[57px] after:right-[33px]">
         <Image
           src="/img/common/profile.png"
           alt="なおまる"
           width={320}
           height={320}
-          className="h-full w-auto"
+          className={`h-full w-auto ${anim}`}
         />
       </div>
       <p className="w-full mt-[15%] text-center text-sm text-primaryColor bg-tertiaryColor">&copy; Naomaru All rights reserved.</p>

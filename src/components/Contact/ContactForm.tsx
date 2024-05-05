@@ -8,12 +8,21 @@ export default function ContactForm() {
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("メール送信");
+
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message }),
+    });
+  };
+
+
   const [nameErr, setNameErr] = useState<string>('hidden');
   const [emailErr, setEmailErr] = useState<string>('hidden');
   const [messageErr, setMessageErr] = useState<string>('hidden');
   const pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$";
-
-  const [modalState, setModalState] = useState<string>('opacity-30');
 
   const confirmName = () => {
     name !== ''
@@ -34,20 +43,8 @@ export default function ContactForm() {
       : setMessageErr("block");
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("メール送信");
-
-    await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({ name, email, message }),
-    });
-  };
-
-  const router = useRouter();
 
   const [isModal, setIsModal] = useState<boolean>(false);
-
   const handleModal = () => {
     if (name !== '' && email !== '' && message !== '') {
       setIsModal(!isModal);
@@ -56,11 +53,16 @@ export default function ContactForm() {
     }
   }
 
+
+  const [modalState, setModalState] = useState<string>('opacity-30');
   useEffect(() => {
     if (name !== '' && email.match(pattern) !== null && message !== '') {
       setModalState('opacity-100')
     }
   }, [name, email, message]);
+
+
+  const router = useRouter();
 
   return (
     <div>
@@ -112,7 +114,7 @@ export default function ContactForm() {
           </li>
         </ul>
 
-        <div onClick={handleModal} className={`inline-block mx-auto my-5 p-px border-none h-9 bg-tertiaryColor rounded-full cursor-pointer ${modalState}`}>
+        <div onClick={handleModal} className={`inline-block mx-auto my-5 p-px border-none h-9 bg-tertiaryColor rounded-full cursor-pointer duration-300 hover:scale-105 ${modalState}`}>
           <span className="flex text-base font-extralight text-primaryColor leading-[30px] px-14 pb-1 relative
             after:content-[''] after:w-2 after:h-2 after:rotate-45 after:absolute after:right-3 after:top-0 after:bottom-0 after:m-auto after:border-white after:border-t after:border-r
             ">

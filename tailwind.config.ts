@@ -88,7 +88,40 @@ const config: Config = {
           transform: "scaleX(.2)",
           opacity: ".4"
         }
-      }
+      },
+
+      jump: {
+        "0%": {
+          transform: "translateY(0)"
+        },
+        "25%": {
+          transform: "translateY(-10px)"
+        },
+        "50%": {
+          transform: "translateY(0)"
+        },
+        "75%": {
+          transform: "translateY(-10px)"
+        },
+        "100%": {
+          transform: "translateY(0)"
+        }
+      },
+
+      jumpInterval: {
+        "0%": {
+          transform: "translateY(0)"
+        },
+        "85%": {
+          transform: "translateY(0)"
+        },
+        "93%": {
+          transform: "translateY(-5px)"
+        },
+        "100%": {
+          transform: "translateY(0)"
+        }
+      },
     },
   },
   plugins: [],

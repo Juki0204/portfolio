@@ -27,9 +27,8 @@ export default function BlogSlider(blog: Props) {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleResize = () => {
-        setWindowSize(
-          window.innerWidth
-        );
+        const windowW = window.innerWidth;
+        windowW < 640 ? setWindowSize(windowW) : setWindowSize(640);
       };
 
       window.addEventListener("resize", handleResize);
@@ -55,7 +54,7 @@ export default function BlogSlider(blog: Props) {
       {blog.blog.map((item, index) => (
         (index < 5) ?
           <SwiperSlide key={index} className={index == 4 ? "" : ""}>
-            <Link href={item.link ?? ''} target="_blank">
+            <Link href={item.link ?? ''} target="_blank" className="block duration-300 hover:scale-[0.97]">
               <div className="rounded-xl overflow-hidden">
                 <Image
                   src={item.image ?? "img/dummy.jpg"}
