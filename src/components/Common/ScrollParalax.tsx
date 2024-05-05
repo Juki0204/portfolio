@@ -33,6 +33,7 @@ const ScrollParalax: NextPage<Props> = ({ children, className, posX, posY }) => 
         start: 'top bottom',
       },
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Profile() {
   return (
     <div className="mb-5">
-      <div className="w-[200px] h-[200px] mx-auto rounded-3xl overflow-hidden">
+      <div className="w-[180px] h-[180px] mx-auto rounded-3xl overflow-hidden">
         <Image
           src="/img/common/profile.png"
           alt="なおまる"
