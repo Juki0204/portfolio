@@ -24,7 +24,7 @@ const ScrollParalax: NextPage<Props> = ({ children, className, posX, posY }) => 
 
   useEffect(() => {
     gsap.to(sectionRef.current, {
-      x: posX ? posX : "-20%",
+      x: posX ? posX : "-12%",
       y: posY ? posY : "",
       ease: 'none',
       scrollTrigger: {

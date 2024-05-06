@@ -121,8 +121,8 @@ export default function Home() {
             <Btn link="/about" text="and more" />
           </ScrollReveal>
         </div>
-        <ScrollParalax className="mix-blend-color-burn mb-10">
-          <div className="w-[200%] aspect-[1280/268] bg-[url('/img/main/section_bg1.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:50%_auto] -translate-x-1/4"></div>
+        <ScrollParalax className="mb-10">
+          <div className="w-[300%] aspect-[1280/268] bg-blend-color-burn bg-primaryColor bg-[url('/img/main/section_bg1.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:33.33333%_auto] -translate-x-1/4"></div>
         </ScrollParalax>
       </section>
 
@@ -140,8 +140,8 @@ export default function Home() {
           <Btn link="https://naomaru-blog.vercel.app" target="_blank" text="and more" />
         </ScrollReveal>
 
-        <ScrollParalax className="mix-blend-color-burn mt-10" posX="30%">
-          <div className="w-[200%] aspect-[1280/262] bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:50%_auto] -translate-x-1/2"></div>
+        <ScrollParalax className="mt-10" posX="30%">
+          <div className="w-[300%] aspect-[1280/262] bg-blend-color-burn bg-primaryColor bg-[url('/img/main/section_bg2.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:33.33333%_auto] -translate-x-1/2"></div>
         </ScrollParalax>
       </section>
 
@@ -218,8 +218,8 @@ export default function Home() {
           <Btn link="/works" text="and more" />
         </ScrollReveal>
 
-        <ScrollParalax className="mix-blend-color-burn mt-16">
-          <div className="w-[200%] aspect-[1280/164] bg-[url('/img/main/section_bg3.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:50%_auto] -translate-x-1/4"></div>
+        <ScrollParalax className="mt-16">
+          <div className="w-[300%] aspect-[1280/164] bg-blend-color-burn bg-primaryColor bg-[url('/img/main/section_bg3.png')] bg-[position:center_bottom] bg-repeat-x bg-[length:33.33333%_auto] -translate-x-1/4"></div>
         </ScrollParalax>
       </section>
 
