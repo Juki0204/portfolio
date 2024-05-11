@@ -19,7 +19,7 @@ type Props = {
   posY?: string,
 }
 
-const ScrollParalax: NextPage<Props> = ({ children, className, posX, posY }) => {
+const ScrollParallax: NextPage<Props> = ({ children, className, posX, posY }) => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -43,4 +43,4 @@ const ScrollParalax: NextPage<Props> = ({ children, className, posX, posY }) => 
   )
 }
 
-export default ScrollParalax;
+export default ScrollParallax;
