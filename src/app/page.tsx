@@ -36,7 +36,7 @@ export default function Home() {
 
         <div className="w-full px-[10%] py-7 mt-8 mx-auto relative">
           <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[10%] m-auto pointer-events-none">
-            <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[330px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+            <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[300px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
           </ScrollReveal>
 
           <ScrollReveal move="left" delay={0}>
