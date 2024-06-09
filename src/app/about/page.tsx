@@ -143,7 +143,7 @@ export default function Home() {
             cssはSass(SCSS)で書く事がほとんど。<br />
             実務ではSCSSにBEM記法のセットを起用する事が多い為自然とその形に。</p>
           <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">階層構造、コンテンツモデルは最大限意識して書いてるつもり。SEO周りは最低限意識して書きますが知識量としてはやや弱め。</p>
-          <p>WordPressは使えなくはないですが普段は殆ど使っていません。指定あればハードコーディングしてからオリジナルテーマでの実装程度は可能です。</p>
+          <p className="mb-4 tracking-[0.2rem] text-sm leading-loose font-bold text-justify">WordPressは使えなくはないですが普段は殆ど使っていません。指定あればハードコーディングしてからオリジナルテーマでの実装程度は可能です。</p>
         </ScrollReveal>
 
         <ScrollReveal move="right" delay={0} className="absolute top-[70%] bottom-0 -right-[10%] m-auto">
