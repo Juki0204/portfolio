@@ -104,7 +104,7 @@ export default function ContactForm() {
               after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">お問い合わせ内容</label>
             <textarea
               value={message}
-              placeholder="お問い合わせ内容を入力して下さい。"
+              placeholder="デザイン制作・サイト制作のご相談・ご依頼お待ちしております。宗教等の勧誘はお断り致します。"
               onChange={(e) => setMessage(e.target.value)}
               onBlur={confirmMessage}
               required
