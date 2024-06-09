@@ -128,7 +128,7 @@ export default function Home() {
 
       <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 relative bg-primaryColor">
         <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto pointer-events-none">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[410px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[380px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Blog" jp="ぶろぐ" />
@@ -149,7 +149,7 @@ export default function Home() {
         <ScrollReveal move="right" delay={0} className="absolute top-[10%] -right-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[360px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
-        <ScrollReveal move="left" delay={0} className="absolute top-[65%] -left-[20%] m-auto pointer-events-none">
+        <ScrollReveal move="left" delay={0} className="absolute top-[55%] -left-[20%] m-auto pointer-events-none">
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[320px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
