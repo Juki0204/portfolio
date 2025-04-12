@@ -21,6 +21,7 @@ const ZenMaruGothic = Zen_Maru_Gothic({ weight: "300", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Naomaru.web",
   description: "My Website",
+  robots: "noindex nofollow",
   openGraph: {
     type: "website",
     url: "https://naomaru-design.vercel.app/",

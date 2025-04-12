@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="w-4/6 ml-auto mb-3">
-            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Brouser Game</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Browser Game</p>
             <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
             <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
           </div>
