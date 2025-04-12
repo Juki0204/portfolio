@@ -20,33 +20,39 @@ export default function Header() {
               lg:pointer-events-auto lg:opacity-100 lg:bg-[transparent] lg:w-80 lg:top-auto lg:bottom-[300px] lg:h-auto lg:left-[calc(50vw+(640px/2)+30px)]`
       }>
         <ul className="p-5 relative flex flex-wrap font-bold lg:bg-primaryColor lg:rounded-[20px] lg:pt-16 lg:pl-10 lg:after:content-['MENU'] lg:after:text-quaternaryColor lg:after:block lg:after:text-2xl lg:after:tracking-widest lg:after:absolute lg:after:top-6 lg:after:left-0 lg:after:right-0 lg:after:m-auto lg:after:text-center">
-          <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[300ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
+          <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[300ms] opacity-100"
+            : "px-5 py-4 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="/" className="text-xl text-quaternaryColor tracking-wider">
               TOP <span className="text-sm">とっぷぺーじ</span>
             </Link>
           </li>
-          <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[500ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
-            <Link onClick={() => setIsOpen(false)} href="/about/" className="text-xl text-quaternaryColor tracking-wider">
+          <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[500ms] opacity-100"
+            : "px-5 py-4 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
+            <Link onClick={() => setIsOpen(false)} href="/about" className="text-xl text-quaternaryColor tracking-wider">
               ABOUT <span className="text-sm">なおまるについて</span>
             </Link>
           </li>
-          <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[700ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
-            <Link onClick={() => setIsOpen(false)} href="/works/" className="text-xl text-quaternaryColor tracking-wider">
+          <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[700ms] opacity-100"
+            : "px-5 py-4 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
+            <Link onClick={() => setIsOpen(false)} href="/works" className="text-xl text-quaternaryColor tracking-wider">
               WORKS <span className="text-sm">つくったもの</span>
             </Link>
           </li>
-          <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[900ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
+          <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[700ms] opacity-100"
+            : "px-5 py-4 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
+            <Link onClick={() => setIsOpen(false)} href="/games" className="text-xl text-quaternaryColor tracking-wider">
+              GAMES <span className="text-sm">つくったゲーム</span>
+            </Link>
+          </li>
+          <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[900ms] opacity-100"
+            : "px-5 py-4 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
             <Link onClick={() => setIsOpen(false)} href="https://naomaru-blog.vercel.app/" target="_blank" className="text-xl text-quaternaryColor tracking-wider">
               BLOG <span className="text-sm">ぶろぐ</span>
             </Link>
           </li>
-          <li className={isOpen ? "p-5 w-full h-min transition-all duration-1000 delay-[1100ms] opacity-100"
-            : "p-5 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
-            <Link onClick={() => setIsOpen(false)} href="/contact/" className="text-xl text-quaternaryColor tracking-wider">
+          <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[1100ms] opacity-100"
+            : "px-5 py-4 w-full h-min transition-all duration-500 opacity-0 -translate-x-5 lg:opacity-100 lg:hover:scale-[1.04] lg:duration-300"}>
+            <Link onClick={() => setIsOpen(false)} href="/contact" className="text-xl text-quaternaryColor tracking-wider">
               CONTACT <span className="text-sm">おといあわせ</span>
             </Link>
           </li>
@@ -72,8 +78,8 @@ export default function Header() {
         }></span>
       </button>
 
-      <ul className={isOpen ? "absolute top-[440px] left-0 w-full p-5 flex flex-wrap font-bold transition-all ease-in duration-1000 delay-[1300ms] opacity-100"
-        : `pointer-events-none absolute top-[440px] left-0 w-full p-5 font-bold transition-all duration-500 ease-in opacity-0 -translate-x-5 
+      <ul className={isOpen ? "absolute top-[440px] left-0 w-full px-5 py-4 flex flex-wrap font-bold transition-all ease-in duration-1000 delay-[1300ms] opacity-100"
+        : `pointer-events-none absolute top-[440px] left-0 w-full px-5 py-4 font-bold transition-all duration-500 ease-in opacity-0 -translate-x-5 
             lg:opacity-100 lg:pointer-events-auto lg:fixed lg:w-90 lg:top-auto lg:bottom-[100px] lg:left-[calc(50vw+(640px/2)+20px)]`}>
         <li className="p-5 w-full h-min">
           <p className="text-xl text-quaternaryColor tracking-wider">
