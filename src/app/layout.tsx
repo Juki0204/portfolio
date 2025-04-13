@@ -19,15 +19,15 @@ const YomogiFont = Yomogi({ weight: "400", subsets: ["latin"] });
 const ZenMaruGothic = Zen_Maru_Gothic({ weight: "300", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Naomaru.web",
-  description: "My Website",
+  title: "Naomorphosis",
+  description: "Naomaru + Metamorphosis = Naomorphosis. 技術力や想像力、クリエイターとしてこれからも「進化し続けたい」という想いを自身のクリエイター名と合わせた造語です。これまでに制作した作品を載せています。",
   robots: "noindex nofollow",
   openGraph: {
     type: "website",
     url: "https://naomaru-design.vercel.app/",
-    title: "Naomaru.web",
-    description: "My Website",
-    siteName: "Naomaru.web",
+    title: "Naomorphosis",
+    description: "Naomaru + Metamorphosis = Naomorphosis. 技術力や想像力、クリエイターとしてこれからも「進化し続けたい」という想いを自身のクリエイター名と合わせた造語です。これまでに制作した作品を載せています。",
+    siteName: "Naomorphosis",
     images: [{
       url: "https://naomaru-design.vercel.app/img/og_image.jpg",
     }],

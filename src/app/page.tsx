@@ -179,7 +179,7 @@ export default function Home() {
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Link href="/works/#site2" className="block relative w-full aspect-[16/9]">
                 <Image
-                  src="/img/works/naomaru.web.jpg"
+                  src="/img/common/og_image.jpg"
                   alt="ポートフォリオサイト"
                   fill
                   style={{ objectFit: 'cover' }}
