@@ -20,7 +20,7 @@ export default async function Blog() {
     });
 
   return (
-    <div className="w-full [&_.swiper-pagination]:pr-7">
+    <div className="w-full [&_.swiper-pagination]:pr-7 [&_.swiper-pagination-bullet-active]:bg-tertiaryColor">
       <BlogSlider blog={articles} />
     </div>
   );

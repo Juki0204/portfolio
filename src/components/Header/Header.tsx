@@ -2,7 +2,7 @@
 import React, { useState, useContext } from "react";
 import { IsThemeContext } from "@/components/Common/ThemeProvider";
 
-import Link from "next/link";
+import { Link } from 'next-view-transitions'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);

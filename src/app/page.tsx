@@ -10,14 +10,14 @@ import ContactForm from "@/components/Contact/ContactForm";
 import PageLoader from "@/components/Common/PageLoader";
 
 import ScrollReveal from "@/components/Common/ScrollReveal";
-import Link from "next/link";
+import { Link } from 'next-view-transitions'
 import ScrollParallax from "@/components/Common/ScrollParallax";
 
 export default function Home() {
 
   return (
     <main className="w-full m-auto overflow-x-hidden">
-      <PageLoader />
+      {/* <PageLoader /> */}
       <section className="max-w-[640px] mx-auto mt-[60px] pt-10 relative z-10 bg-primaryColor">
         <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] pointer-events-none"></div>
         <Profile />

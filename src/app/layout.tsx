@@ -12,6 +12,8 @@ import Footer from "@/components/Footer/Footer";
 
 import Loading from "@/app/loading";
 
+import { ViewTransitions } from "next-view-transitions";
+
 // const inter = Inter({ subsets: ["latin"] });
 
 const HachiMaruPop = Hachi_Maru_Pop({ weight: "400", subsets: ["latin"] });
@@ -41,13 +43,15 @@ export default function RootLayout({
 }>) {
   return (
     <ThemeProvider>
-      <html lang="en" className="hidden-scrollbar">
-        <Body font={`${ZenMaruGothic.className}`}>
-          <Header />
-          {children}
-          <Footer />
-        </Body>
-      </html>
+      <ViewTransitions>
+        <html lang="en" className="hidden-scrollbar">
+          <Body font={`${ZenMaruGothic.className}`}>
+            <Header />
+            {children}
+            <Footer />
+          </Body>
+        </html>
+      </ViewTransitions>
     </ThemeProvider>
   );
 }
