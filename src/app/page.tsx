@@ -158,7 +158,26 @@ export default function Home() {
         <ul className="pb-3">
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#site1" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/#attendanceManager" className="block relative w-full aspect-[16/9]">
+                <Image
+                  src="/img/works/attendance-manager.jpg"
+                  alt="勤怠管理アプリ"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </Link>
+            </ScrollReveal>
+            <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
+              <div className="">
+                <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Web Apprication</p>
+                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">勤怠管理アプリ</p>
+                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
+              </div>
+            </ScrollReveal>
+          </li>
+          <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
+            <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+              <Link href="/works/#hakuryusha" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/works/hakuryusha.jpg"
                   alt="有限会社 白龍社 様"
@@ -171,13 +190,13 @@ export default function Home() {
               <div className="">
                 <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Corporate Site</p>
                 <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">有限会社 白龍社 様</p>
-                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding</p>
+                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding & Programing</p>
               </div>
             </ScrollReveal>
           </li>
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#site2" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/#portfolio" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/common/og_image.jpg"
                   alt="ポートフォリオサイト"
@@ -189,14 +208,14 @@ export default function Home() {
             <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
               <div className="">
                 <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Portfolio Site</p>
-                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
+                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">ポートフォリオ</p>
                 <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
               </div>
             </ScrollReveal>
           </li>
-          <li className="w-full duration-300 hover:scale-[0.97]">
+          {/* <li className="w-full duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#site3" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/#blog" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/works/naomaru-blog.jpg"
                   alt="なおまるブログ"
@@ -208,11 +227,11 @@ export default function Home() {
             <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
               <div className="">
                 <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Blog Site</p>
-                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
-                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Programing</p>
+                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">ブログ</p>
+                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
               </div>
             </ScrollReveal>
-          </li>
+          </li> */}
         </ul>
         <ScrollReveal move="bottom" delay={200}>
           <Btn link="/works" text="and more" />

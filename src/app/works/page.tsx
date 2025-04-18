@@ -14,7 +14,7 @@ export default function Home() {
         <SecTitle en="Works" jp="つくったもの" className="mb-5" />
 
         <ScrollReveal move="bottom" delay={0} className="p-7">
-          <div id="site1" className="pt-16 -mt-16 mb-3">
+          <div id="attendanceManager" className="pt-16 -mt-16 mb-3">
             <Link href="https://attendance-manager-pi.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/attendance-manager.jpg"
@@ -59,7 +59,7 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={0} className="p-7">
-          <div id="site1" className="pt-16 -mt-16 mb-3">
+          <div id="hakuryusha" className="pt-16 -mt-16 mb-3">
             <Link href="http://hakuryusha.starfree.jp" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/hakuryusha.jpg"
@@ -72,7 +72,7 @@ export default function Home() {
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Corporate Site</p>
             <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">有限会社 白龍社 様</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding & programing</p>
+            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding & Programing</p>
           </div>
           <ul>
             <li>
@@ -99,7 +99,7 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={200} className="p-7">
-          <div id="site2" className="pt-16 -mt-16 mb-3">
+          <div id="portfolio" className="pt-16 -mt-16 mb-3">
             <Link href="https://naomaru-design.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/common/og_image.jpg"
@@ -139,7 +139,7 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={200} className="p-7">
-          <div id="site3" className="pt-16 -mt-16 mb-3">
+          <div id="blog" className="pt-16 -mt-16 mb-3">
             <Link href="https://naomaru-blog.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/naomaru-blog.jpg"
