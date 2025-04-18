@@ -12,6 +12,52 @@ export default function Home() {
     <main className="max-w-[640px] w-full m-auto overflow-x-hidden">
       <section className="mt-[60px] mb-5 pt-10 pb-5 relative z-10 text-center overflow-hidden">
         <SecTitle en="Works" jp="つくったもの" className="mb-5" />
+
+        <ScrollReveal move="bottom" delay={0} className="p-7">
+          <div id="site1" className="pt-16 -mt-16 mb-3">
+            <Link href="https://attendance-manager-pi.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+              <Image
+                src="/img/works/attendance-manager.jpg"
+                alt="勤怠管理アプリ"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </Link>
+          </div>
+          <div className="w-4/6 ml-auto mb-3">
+            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Web Apprication</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">勤怠管理アプリ</p>
+            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
+          </div>
+          <ul>
+            <li>
+              <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
+              <dl className="flex flex-wrap mb-4 w-11/12 mx-auto">
+                <dt className="w-2/5 text-sm leading-loose tracking-wide py-1 font-bold grid place-content-center border-b border-secondaryColor">【 Design 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Figma</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Program 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">TypeScript</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center border-b border-secondaryColor">【 Framework 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold border-b border-secondaryColor">Next.js v14.1.4, TailwindCSS</dd>
+                <dt className="w-2/5 text-sm leading-loose py-1 tracking-wide font-bold grid place-content-center">【 Database 】</dt>
+                <dd className="w-3/5 py-1 text-sm leading-loose tracking-wide font-bold">supabase</dd>
+              </dl>
+            </li>
+            <li>
+              <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">コンセプト / 詳細</h3>
+              <div className="w-11/12 mx-auto">
+                <p className="text-justify mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">自社スタッフの勤怠状況管理・共有を目的として作成したWEBアプリです。</p>
+                <p className="text-justify mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">テレワーカーと勤務状況の共有がしづらい環境で、離席や出退勤のタイミングなどを把握出来ていなかったので、分かりやすく円滑に管理・共有出来るような仕組みを目指しました。</p>
+                <p className="text-justify mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">・Auth認証<br />・勤怠管理<br />・同一所属メンバーの勤怠状況の共有<br />・同一所属メンバーの行動通知<br />・月間勤務時間の確認<br />・個人用メモ<br />などなど、項目内容は自社に寄っている部分はありますが、勤怠管理アプリとして一通り必要な機能は揃っているかと思います。</p>
+                <p className="text-justify mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">もし個人で利用されたいという稀有な方がいらっしゃいましたら、他者と被らないような所属先を指定してユーザー登録していただければ一通りの機能をお試しいただけます。</p>
+                <p className="text-justify mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">閲覧のみされたい方は下記のテストアカウントをご利用下さい。</p>
+                <p className="text-justify mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">テストアカウント<br />【MAIL】mini2154@ruru.be<br />【PASS】test1234</p>
+              </div>
+            </li>
+          </ul>
+          <Btn link="https://attendance-manager-pi.vercel.app" text="アプリを使ってみる" />
+        </ScrollReveal>
+
         <ScrollReveal move="bottom" delay={0} className="p-7">
           <div id="site1" className="pt-16 -mt-16 mb-3">
             <Link href="http://hakuryusha.starfree.jp" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
@@ -26,7 +72,7 @@ export default function Home() {
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Corporate Site</p>
             <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">有限会社 白龍社 様</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding</p>
+            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding & programing</p>
           </div>
           <ul>
             <li>
@@ -65,7 +111,7 @@ export default function Home() {
           </div>
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Portfolio Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">ポートフォリオ</p>
             <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
           </div>
           <ul>
@@ -105,8 +151,8 @@ export default function Home() {
           </div>
           <div className="w-4/6 ml-auto mb-3">
             <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Blog Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">自主制作</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Programing</p>
+            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">個人ブログ</p>
+            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
           </div>
           <ul>
             <li>
