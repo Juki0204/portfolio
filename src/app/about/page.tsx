@@ -6,6 +6,16 @@ import SecTitle from "@/components/Common/SecTitle";
 import ScrollReveal from "@/components/Common/ScrollReveal";
 
 export default function Home() {
+  const now = new Date();
+  const start = new Date('2017/11/3');
+
+  let years = now.getFullYear() - start.getFullYear();
+
+  const hasStartPassed = now.getMonth() > start.getMonth() || (now.getMonth() === start.getMonth() && now.getDate() >= start.getDate());
+
+  if (!hasStartPassed) {
+    years--;
+  }
 
   return (
     <main className="max-w-[640px] w-full m-auto overflow-x-hidden">
@@ -14,6 +24,8 @@ export default function Home() {
         <Profile />
         <ScrollReveal move="bottom" delay={0}>
           <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">1992年2月生まれ<br />大阪生まれ、大阪育ち</p>
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">WEBデザイナー歴は早いもので<br />今年でもう{years}年目になります。</p>
+          <div className="w-6 h-px bg-tertiaryColor inline-block my-5"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">ゲームクリエイターを目指して大学に<br />

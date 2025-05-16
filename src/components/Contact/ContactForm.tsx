@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/navigation";
+import { IsThemeContext } from "@/components/Common/ThemeProvider";
 
 export default function ContactForm() {
   const [name, setName] = useState<string>('');
@@ -64,14 +65,22 @@ export default function ContactForm() {
 
   const router = useRouter();
 
+  const isLang = useContext(IsThemeContext).isLang;
+
   return (
     <div>
       <form onSubmit={handleSubmit} className="text-center">
         <ul className="w-full text-left max-w-[400px] mx-auto">
           <li className="mb-5">
-            <label className="inline-block font-bold ml-3 mb-1 relative
-              after:content-['必須'] after:bg-tertiaryColor after:inline-block after:w-10 after:ml-1 after:py-px after:text-center after:rounded-md after:text-[#fff] after:text-xs
-              after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">お名前</label>
+            {isLang === 'ja' ?
+              <label className="inline-block font-bold ml-3 mb-1 relative
+                after:content-['必須'] after:bg-tertiaryColor after:inline-block after:w-10 after:ml-1 after:py-px after:px-2 after:text-center after:rounded-md after:text-[#fff] after:text-xs
+                after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">お名前</label>
+              :
+              <label className="inline-block font-bold ml-3 mb-1 relative
+                after:content-['required'] after:bg-tertiaryColor after:inline-block after:w-fit after:ml-1 after:py-px after:px-2 after:text-center after:rounded-md after:text-[#fff] after:text-xs
+                after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">Name</label>
+            }
             <input
               type="text"
               value={name}
@@ -84,9 +93,15 @@ export default function ContactForm() {
             <span className={`inline-block ml-3 text-[#f33] text-xs ${nameErr}`}>お名前を入力して下さい。</span>
           </li>
           <li className="mb-5">
-            <label className="inline-block font-bold ml-3 mb-1 relative
-              after:content-['必須'] after:bg-tertiaryColor after:inline-block after:w-10 after:ml-1 after:py-px after:text-center after:rounded-md after:text-[#fff] after:text-xs
-              after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">メールアドレス</label>
+            {isLang === 'ja' ?
+              <label className="inline-block font-bold ml-3 mb-1 relative
+                after:content-['必須'] after:bg-tertiaryColor after:inline-block after:w-10 after:ml-1 after:py-px after:px-2 after:text-center after:rounded-md after:text-[#fff] after:text-xs
+                after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">メールアドレス</label>
+              :
+              <label className="inline-block font-bold ml-3 mb-1 relative
+                after:content-['required'] after:bg-tertiaryColor after:inline-block after:w-fit after:ml-1 after:py-px after:px-2 after:text-center after:rounded-md after:text-[#fff] after:text-xs
+                after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">Email</label>
+            }
             <input
               type="email"
               value={email}
@@ -99,9 +114,15 @@ export default function ContactForm() {
             <span className={`inline-block ml-3 text-[#f33] text-xs ${emailErr}`}>メールアドレスを正しく入力して下さい。</span>
           </li>
           <li>
-            <label className="inline-block font-bold ml-3 mb-1 relative
-              after:content-['必須'] after:bg-tertiaryColor after:inline-block after:w-10 after:ml-1 after:py-px after:text-center after:rounded-md after:text-[#fff] after:text-xs
-              after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">お問い合わせ内容</label>
+            {isLang === 'ja' ?
+              <label className="inline-block font-bold ml-3 mb-1 relative
+                after:content-['必須'] after:bg-tertiaryColor after:inline-block after:w-10 after:ml-1 after:py-px after:px-2 after:text-center after:rounded-md after:text-[#fff] after:text-xs
+                after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">お問い合わせ内容</label>
+              :
+              <label className="inline-block font-bold ml-3 mb-1 relative
+                after:content-['required'] after:bg-tertiaryColor after:inline-block after:w-fit after:ml-1 after:py-px after:px-2 after:text-center after:rounded-md after:text-[#fff] after:text-xs
+                after:absolute after:left-full after:top-[50%] after:-translate-y-[50%]">Inquiry Details</label>
+            }
             <textarea
               value={message}
               placeholder="デザイン制作・サイト制作のご相談・ご依頼お待ちしております。宗教等の勧誘はお断り致します。"
@@ -118,7 +139,7 @@ export default function ContactForm() {
           <span className="flex text-base font-extralight text-primaryColor leading-[30px] px-14 pb-1 relative
             after:content-[''] after:w-2 after:h-2 after:rotate-45 after:absolute after:right-3 after:top-0 after:bottom-0 after:m-auto after:border-white after:border-t after:border-r
             ">
-            確認画面へ
+            {isLang === 'ja' ? '確認画面へ' : 'Confirmation'}
           </span>
         </div>
 

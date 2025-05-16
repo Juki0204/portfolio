@@ -1,4 +1,9 @@
+'use client';
+
 import Image from "next/image";
+
+import { useContext } from "react";
+import { IsThemeContext } from "@/components/Common/ThemeProvider";
 
 import Profile from "@/components/Common/Profile";
 import Btn from "@/components/Common/Btn";
@@ -14,6 +19,7 @@ import { Link } from 'next-view-transitions'
 import ScrollParallax from "@/components/Common/ScrollParallax";
 
 export default function Home() {
+  let langState = useContext(IsThemeContext).isLang;
 
   return (
     <main className="w-full m-auto overflow-x-hidden">
@@ -21,15 +27,32 @@ export default function Home() {
       <section className="max-w-[640px] mx-auto mt-[60px] pt-10 relative z-10 bg-primaryColor">
         <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] pointer-events-none"></div>
         <Profile />
-        <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">「デザインはあまり好きじゃない。」<br />
-          「でもコーディングは好き。」<br />
-          「プログラムも苦手だけど好き。」</p>
-        <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">でも、仕事って<br />
-          好き嫌いでするものじゃないから<br />
-          &nbsp;私は「私に出来る事」をする。</p>
-        <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">だけど、嫌いだったものが<br />
-          仕事の中で好きに変わったなら<br />
-          &nbsp;それはそれで良い事なんじゃないかな。</p>
+
+        {langState === 'ja' ?
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">
+            「デザインはあまり好きじゃない。」<br />
+            「でもコーディングは好き。」<br />
+            「プログラムも得意じゃないけど好き。」</p>
+          :
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">
+            &quot;I don&apos;t really like design.&quot;<br />
+            &quot;but I like coding.&quot;<br />
+            &quot;I&apos;m not good at programming either,<br />but I like it.&quot;</p>
+        }
+
+        {langState === 'ja' ?
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">でも、仕事って<br />好き嫌いでするものじゃないから<br />&nbsp;私は「私に出来る事」をする。</p>
+          :
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">But work is not something<br />you do because you like it or not,<br />so I do “what I can do”.</p>
+        }
+
+        {langState === 'ja' ?
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">だけど、嫌いだったものが<br />
+            仕事の中で好きに変わったなら<br />
+            &nbsp;それはそれで良い事なんじゃないかな。</p>
+          :
+          <p className="text-center mb-4 tracking-[0.2rem] text-sm leading-loose font-bold">But if something I disliked turns<br />into something I like in my work,<br />that&apos;s a good thing.</p>
+        }
 
         <InfiniteSlide elem={'source code means "designing"source code. Writing "beautiful"'} speed={60000} className="[&_.swiper-slide]:leading-[1.3] [&_.swiper-slide_p]:text-secondaryColor w-[110%] translate-x-[-5%] -mb-28 opacity-30" />
         <InfiniteSlide elem={'source code. Writing "beautiful"source code means "designing"'} speed={45000} className="[&_.swiper-slide]:leading-[1.3] w-[110%] translate-x-[-5%] opacity-30 " />
@@ -131,7 +154,7 @@ export default function Home() {
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[380px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
-          <SecTitle en="Blog" jp="ぶろぐ" />
+          <SecTitle en="Blog" jp={langState === 'ja' ? "ぶろぐ" : "Weblogs"} />
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <Blog />
@@ -153,7 +176,7 @@ export default function Home() {
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[320px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
-          <SecTitle en="Works" jp="つくったもの" />
+          <SecTitle en="Works" jp={langState === 'ja' ? "つくったもの" : "Productions"} />
         </ScrollReveal>
         <ul className="pb-3">
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
@@ -247,7 +270,7 @@ export default function Home() {
           <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[160vw] max-w-[700px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
-          <SecTitle en="Contact" jp="おといあわせ" />
+          <SecTitle en="Contact" jp={langState === 'ja' ? "おといあわせ" : "Contact me"} />
         </ScrollReveal>
         {/* <Btn link="/contact" text="Go To Contact" /> */}
         <ScrollReveal move="bottom" delay={200} className="relative z-10">

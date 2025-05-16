@@ -1,23 +1,26 @@
-import Parser from "rss-parser";
+"use client";
 
+import { useEffect, useState } from "react";
 import BlogSlider from "./BlogSlider";
 
-export default async function Blog() {
-  const blogRss = await new Parser().parseURL('https://naomaru-blog.vercel.app/feed');
-  const articles: {
-    title: string,
-    date: string,
-    link: string,
-    image: string,
-  }[] =
-    blogRss.items.map(blog => {
-      return {
-        title: blog.title ?? "",
-        date: blog.pubDate ?? "",
-        link: blog.link ?? "",
-        image: blog.enclosure ? blog.enclosure.url : "/img/dummy.jpg",
-      }
-    });
+type Article = {
+  title: string;
+  date: string;
+  link: string;
+  image: string;
+};
+
+export default function Blog() {
+  const [articles, setArticles] = useState<Article[]>([]);
+
+  useEffect(() => {
+    const fetchBlog = async () => {
+      const res = await fetch("/api/blog-feed");
+      const data = await res.json();
+      setArticles(data);
+    };
+    fetchBlog();
+  }, []);
 
   return (
     <div className="w-full [&_.swiper-pagination]:pr-7 [&_.swiper-pagination-bullet-active]:bg-tertiaryColor">

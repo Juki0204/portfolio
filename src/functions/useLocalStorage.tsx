@@ -1,6 +1,6 @@
 import { useEffect, useState, Dispatch, SetStateAction } from "react";
 
-export const useLocalStrage = (key: string, initialValue: string): [string, Dispatch<SetStateAction<string>>] => {
+export const useLocalStorage = (key: string, initialValue: string): [string, Dispatch<SetStateAction<string>>] => {
 
   // const [value, setValue] = useState(() => {
   //   const keyValue = localStorage.getItem(key);
