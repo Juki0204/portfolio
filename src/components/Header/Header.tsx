@@ -18,7 +18,7 @@ export default function Header() {
       <nav className={
         isOpen ? "fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-100 h-lvh transition-all duration-500 ease-in"
           : `fixed bg-primaryColor w-full pt-[60px] top-0 left-0 opacity-0 h-lvh transition-all duration-500 ease-in pointer-events-none 
-              lg:pointer-events-auto lg:opacity-100 lg:bg-[transparent] lg:w-80 lg:top-auto lg:bottom-[300px] lg:h-auto lg:transition-none lg:left-[calc(50vw+(640px/2)+30px)]`
+              lg:pointer-events-auto lg:opacity-100 lg:bg-[transparent] lg:w-80 lg:top-auto lg:bottom-[390px] lg:h-auto lg:transition-none lg:left-[calc(50vw+(640px/2)+30px)]`
       }>
         <ul className="p-5 relative flex flex-wrap font-bold lg:bg-primaryColor lg:rounded-[20px] lg:pt-16 lg:pl-10 lg:after:content-['MENU'] lg:after:text-quaternaryColor lg:after:block lg:after:text-2xl lg:after:tracking-widest lg:after:absolute lg:after:top-6 lg:after:left-0 lg:after:right-0 lg:after:m-auto lg:after:text-center">
           <li className={isOpen ? "px-5 py-4 w-full h-min transition-all duration-1000 delay-[300ms] opacity-100"
