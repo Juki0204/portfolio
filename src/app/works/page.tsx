@@ -3,10 +3,11 @@ import { Link } from 'next-view-transitions'
 
 import SecTitle from "@/components/Common/SecTitle";
 import Btn from "@/components/Common/Btn";
+import Work from "@/components/works/Work";
 
 import ScrollReveal from "@/components/Common/ScrollReveal";
 
-export default function Home() {
+export default function Works() {
 
   return (
     <main className="max-w-[640px] w-full m-auto overflow-x-hidden">
@@ -14,8 +15,8 @@ export default function Home() {
         <SecTitle en="Works" jp="つくったもの" className="mb-5" />
 
         <ScrollReveal move="bottom" delay={0} className="p-7">
-          <div id="attendanceManager" className="pt-16 -mt-16 mb-3">
-            <Link href="https://attendance-manager-pi.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+          <Work productType="Web Apprication" productName="勤怠管理アプリ" environment={['Figma', 'TypeScript', 'Next.js', 'Tailwind']}>
+            <Link href="https://attendance-manager-pi.vercel.app" target="_blank" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/attendance-manager.jpg"
                 alt="勤怠管理アプリ"
@@ -23,12 +24,9 @@ export default function Home() {
                 style={{ objectFit: 'cover' }}
               />
             </Link>
-          </div>
-          <div className="w-4/6 ml-auto mb-3">
-            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Web Apprication</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">勤怠管理アプリ</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
-          </div>
+          </Work>
+          <Btn link="/works/" text="and more" />
+
           <ul>
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
@@ -59,8 +57,8 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={0} className="p-7">
-          <div id="hakuryusha" className="pt-16 -mt-16 mb-3">
-            <Link href="http://hakuryusha.starfree.jp" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+          <Work productType="Corporate Site" productName="有限会社 白龍社 様" environment={['Photoshop', 'HTML', 'CSS', 'JavaScript']}>
+            <Link href="https://hakuryusha-oshibori.com/" target="_blank" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/hakuryusha.jpg"
                 alt="有限会社 白龍社 様"
@@ -68,12 +66,9 @@ export default function Home() {
                 style={{ objectFit: 'cover' }}
               />
             </Link>
-          </div>
-          <div className="w-4/6 ml-auto mb-3">
-            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Corporate Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">有限会社 白龍社 様</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding & Programing</p>
-          </div>
+          </Work>
+          <Btn link="/works/" text="and more" />
+
           <ul>
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
@@ -99,8 +94,8 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={200} className="p-7">
-          <div id="portfolio" className="pt-16 -mt-16 mb-3">
-            <Link href="https://naomaru-design.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+          <Work productType="Portfolio Site" productName="ポートフォリオ" environment={['TypeScript', 'Next.js', 'Tailwind']}>
+            <Link href="https://naomaru-design.vercel.app" target="_blank" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/common/og_image.jpg"
                 alt="ポートフォリオサイト"
@@ -108,12 +103,9 @@ export default function Home() {
                 style={{ objectFit: 'cover' }}
               />
             </Link>
-          </div>
-          <div className="w-4/6 ml-auto mb-3">
-            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Portfolio Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">ポートフォリオ</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
-          </div>
+          </Work>
+          <Btn link="/works/" text="and more" />
+
           <ul>
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>
@@ -139,8 +131,8 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="bottom" delay={200} className="p-7">
-          <div id="blog" className="pt-16 -mt-16 mb-3">
-            <Link href="https://naomaru-blog.vercel.app" target="_blank" className="block relative w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+          <Work productType="Blog Site" productName="個人ブログ" environment={['JavaScript', 'Next.js', 'microCMS']}>
+            <Link href="https://naomaru-blog.vercel.app" target="_blank" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
               <Image
                 src="/img/works/naomaru-blog.jpg"
                 alt="なおまるブログ"
@@ -148,12 +140,9 @@ export default function Home() {
                 style={{ objectFit: 'cover' }}
               />
             </Link>
-          </div>
-          <div className="w-4/6 ml-auto mb-3">
-            <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Blog Site</p>
-            <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">個人ブログ</p>
-            <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
-          </div>
+          </Work>
+          <Btn link="/works/" text="and more" />
+
           <ul>
             <li>
               <h3 className="mb-2 text-base leading-loose font-bold bg-tertiaryColor text-primaryColor rounded-full">制作環境 / ソフトウェア</h3>

@@ -61,9 +61,9 @@ export default function Header() {
         <ul className={isOpen ? "w-full px-5 flex flex-wrap font-bold transition-all ease-in duration-1000 delay-[1300ms] opacity-100"
           : `pointer-events-none w-full px-5 font-bold transition-all duration-500 ease-in opacity-0 -translate-x-5 
             lg:opacity-100 lg:pointer-events-auto lg:fixed lg:w-90 lg:top-auto lg:bottom-[100px] lg:transition-none lg:left-[calc(50vw+(640px/2)+20px)]`}>
-          <li className="p-5 w-full h-min">
+          <li className="p-5 pb-3 w-full h-min">
             <p className="text-xl text-quaternaryColor tracking-wider">
-              THEME COLOR {isLang === 'ja' ? <span className="text-sm">さいと の いろ</span> : <span className="text-sm">Overall site color</span>}<br />
+              THEME COLOR {isLang === 'ja' ? <span className="text-sm">テーマカラー</span> : <span className="text-sm">Overall site color</span>}<br />
               {isLang === 'ja' ? <span className="text-xs">サイトのテーマカラーを変更できます</span> : <span className="text-xs">You can change the color of the entire site.</span>}
             </p>
           </li>
