@@ -26,8 +26,8 @@ export default function Work({ children, productType, productName, environment }
         <p className="text-right font-bold tracking-wide leading-relaxed pr-1">{productType}</p>
         <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1 pb-1">{productName}</p>
         <p className="flex justify-end w-full font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">
-          {environment.map(item => (
-            <span className="inline-block pl-2">#{item}</span>
+          {environment.map((item, key) => (
+            <span key={key} className="inline-block pl-2">#{item}</span>
           ))}
         </p>
       </div>
