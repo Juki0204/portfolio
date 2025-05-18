@@ -25,7 +25,7 @@ export default function Works() {
               />
             </Link>
           </Work>
-          <Btn link="/works/" text="and more" />
+          {/* <Btn link="/works/" text="and more" /> */}
 
           <ul>
             <li>
@@ -67,7 +67,7 @@ export default function Works() {
               />
             </Link>
           </Work>
-          <Btn link="/works/" text="and more" />
+          {/* <Btn link="/works/" text="and more" /> */}
 
           <ul>
             <li>
@@ -104,7 +104,7 @@ export default function Works() {
               />
             </Link>
           </Work>
-          <Btn link="/works/" text="and more" />
+          {/* <Btn link="/works/" text="and more" /> */}
 
           <ul>
             <li>
@@ -141,7 +141,7 @@ export default function Works() {
               />
             </Link>
           </Work>
-          <Btn link="/works/" text="and more" />
+          {/* <Btn link="/works/" text="and more" /> */}
 
           <ul>
             <li>
