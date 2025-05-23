@@ -37,7 +37,7 @@ const ScrollReveal: NextPage<Props> = ({ children, move, delay, className, id })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sectionRef]);
 
-  return <div id={`${id}`} className={`${className}`} ref={sectionRef}>{children}</div>;
+  return <div id={id ? `${id}` : ""} className={`${className}`} ref={sectionRef}>{children}</div>;
 }
 
 export default ScrollReveal;

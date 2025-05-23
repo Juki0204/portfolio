@@ -25,7 +25,7 @@ export default function Home() {
     <main className="w-full m-auto overflow-x-hidden">
       {/* <PageLoader /> */}
       <section className="max-w-[640px] mx-auto mt-[60px] pt-10 relative z-10 bg-primaryColor">
-        <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] pointer-events-none"></div>
+        <div className="absolute top-[30%] -left-[10%] rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[200px] aspect-square animate-[rolling_20s_linear_0s_infinite] pointer-events-none"></div>
         <Profile />
 
         {langState === 'ja' ?
@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="w-full px-[10%] py-7 mt-8 mx-auto relative">
           <ScrollReveal move="right" delay={0} className="absolute top-0 bottom-0 -right-[10%] m-auto pointer-events-none">
-            <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[300px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+            <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-15 w-[300px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
           </ScrollReveal>
 
           <ScrollReveal move="left" delay={0}>
@@ -151,7 +151,7 @@ export default function Home() {
 
       <section className="max-w-[640px] mx-auto w-full p-7 mb-5 pr-0 relative bg-primaryColor">
         <ScrollReveal move="left" delay={0} className="absolute top-0 bottom-0 -left-[20%] m-auto pointer-events-none">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[380px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[380px] aspect-square animate-[rolling_15s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Blog" jp={langState === 'ja' ? "ぶろぐ" : "Weblogs"} />
@@ -170,10 +170,10 @@ export default function Home() {
 
       <section className="max-w-[640px] mx-auto w-full p-7 mb-5 relative bg-primaryColor">
         <ScrollReveal move="right" delay={0} className="absolute top-[10%] -right-[20%] m-auto pointer-events-none">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[360px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-15 w-[360px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="left" delay={0} className="absolute top-[55%] -left-[20%] m-auto pointer-events-none">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-5 w-[320px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[320px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Works" jp={langState === 'ja' ? "つくったもの" : "Productions"} />
@@ -181,7 +181,7 @@ export default function Home() {
         <ul className="pb-3">
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#attendanceManager" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/attendance-manager" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/works/attendance-manager.jpg"
                   alt="勤怠管理アプリ"
@@ -200,7 +200,7 @@ export default function Home() {
           </li>
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#hakuryusha" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/hakuryusha-oshibori" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/works/hakuryusha.jpg"
                   alt="有限会社 白龍社 様"
@@ -219,7 +219,7 @@ export default function Home() {
           </li>
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
             <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#portfolio" className="block relative w-full aspect-[16/9]">
+              <Link href="/works/naomorphosis" className="block relative w-full aspect-[16/9]">
                 <Image
                   src="/img/common/og_image.jpg"
                   alt="ポートフォリオサイト"
@@ -267,7 +267,7 @@ export default function Home() {
 
       <section className="max-w-[640px] mx-auto w-full p-7 pb-[20%] relative overflow-hidden">
         <ScrollReveal move="right" delay={0} className="absolute top-[10%] left-1/2 -translate-x-1/2 m-auto pointer-events-none">
-          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-10 w-[160vw] max-w-[700px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
+          <div className="rounded-[61%_39%_58%_42%_/_48%_62%_38%_52%] bg-tertiaryColor opacity-15 w-[160vw] max-w-[700px] aspect-square animate-[rolling_20s_linear_0s_infinite]"></div>
         </ScrollReveal>
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Contact" jp={langState === 'ja' ? "おといあわせ" : "Contact me"} />
