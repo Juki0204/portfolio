@@ -6,13 +6,15 @@ import { useContext } from "react";
 import { IsThemeContext } from "@/components/Common/ThemeProvider";
 
 import Profile from "@/components/Common/Profile";
+import Skills from "@/components/Main/Skills";
 import Btn from "@/components/Common/Btn";
 import SecTitle from "@/components/Common/SecTitle";
 import Blog from "@/components/Blog/Blog";
+import Work from "@/components/works/Work";
 import InfiniteSlide from "@/components/Common/InfinitSlide";
 import ContactForm from "@/components/Contact/ContactForm";
 
-import PageLoader from "@/components/Common/PageLoader";
+// import PageLoader from "@/components/Common/PageLoader";
 
 import ScrollReveal from "@/components/Common/ScrollReveal";
 import { Link } from 'next-view-transitions'
@@ -63,84 +65,68 @@ export default function Home() {
           </ScrollReveal>
 
           <ScrollReveal move="left" delay={0}>
-            <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-5 pb-1 px-2 flex gap-3">
-              <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Design</li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/photoshop_icon.png"
-                  alt="photoshop"
-                  width={50}
-                  height={50}
-                  className="animate-[jumpInterval_5s_ease_0s_infinite]"
-                />
-              </li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/figma_icon.png"
-                  alt="figma"
-                  width={50}
-                  height={50}
-                />
-              </li>
-            </ul>
-            <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-5 pb-1 px-2 flex gap-3">
-              <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Coding</li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/html_icon.png"
-                  alt="html"
-                  width={50}
-                  height={50}
-                  className="animate-[jumpInterval_4s_ease_4.5s_infinite]"
-                />
-              </li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/css_icon.png"
-                  alt="css"
-                  width={50}
-                  height={50}
-                  className="animate-[jumpInterval_4.5s_ease_2s_infinite]"
-                />
-              </li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/sass_icon.png"
-                  alt="sass"
-                  width={50}
-                  height={50}
-                  className="animate-[jumpInterval_5s_ease_6s_infinite]"
-                />
-              </li>
-            </ul>
-            <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-5 pb-1 px-2 flex gap-3">
-              <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Programing</li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/js_icon.png"
-                  alt="javascript"
-                  width={50}
-                  height={50}
-                  className="animate-[jumpInterval_5s_ease_2s_infinite]"
-                />
-              </li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/ts_icon.png"
-                  alt="typescript"
-                  width={50}
-                  height={50}
-                />
-              </li>
-              <li className="w-10 aspect-square flex items-center">
-                <Image
-                  src="/img/about/react_icon.png"
-                  alt="react"
-                  width={50}
-                  height={50}
-                />
-              </li>
-            </ul>
+            <Skills title="Design">
+              <Image
+                src="/img/about/photoshop_icon.png"
+                alt="photoshop"
+                width={50}
+                height={50}
+                className="animate-[jumpInterval_5s_ease_0s_infinite]"
+              />
+              <Image
+                src="/img/about/figma_icon.png"
+                alt="figma"
+                width={50}
+                height={50}
+              />
+            </Skills>
+
+            <Skills title="Coding">
+              <Image
+                src="/img/about/html_icon.png"
+                alt="html"
+                width={50}
+                height={50}
+                className="animate-[jumpInterval_4s_ease_4.5s_infinite]"
+              />
+              <Image
+                src="/img/about/css_icon.png"
+                alt="css"
+                width={50}
+                height={50}
+                className="animate-[jumpInterval_4.5s_ease_2s_infinite]"
+              />
+              <Image
+                src="/img/about/sass_icon.png"
+                alt="sass"
+                width={50}
+                height={50}
+                className="animate-[jumpInterval_5s_ease_6s_infinite]"
+              />
+            </Skills>
+
+            <Skills title="Programing">
+              <Image
+                src="/img/about/js_icon.png"
+                alt="javascript"
+                width={50}
+                height={50}
+                className="animate-[jumpInterval_5s_ease_2s_infinite]"
+              />
+              <Image
+                src="/img/about/ts_icon.png"
+                alt="typescript"
+                width={50}
+                height={50}
+              />
+              <Image
+                src="/img/about/react_icon.png"
+                alt="react"
+                width={50}
+                height={50}
+              />
+            </Skills>
+
             <Btn link="/about" text="and more" />
           </ScrollReveal>
         </div>
@@ -178,83 +164,70 @@ export default function Home() {
         <ScrollReveal move="bottom" delay={200}>
           <SecTitle en="Works" jp={langState === 'ja' ? "つくったもの" : "Productions"} />
         </ScrollReveal>
+
         <ul className="pb-3">
+
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
-            <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/attendance-manager" className="block relative w-full aspect-[16/9]">
-                <Image
-                  src="/img/works/attendance-manager.jpg"
-                  alt="勤怠管理アプリ"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </Link>
-            </ScrollReveal>
-            <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
-              <div className="">
-                <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Web Apprication</p>
-                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">勤怠管理アプリ</p>
-                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
-              </div>
+            <ScrollReveal move="bottom" delay={0}>
+              <Work productType="Web Apprication" productName="勤怠管理アプリ" environment={['Figma', 'TypeScript', 'Next.js', 'Tailwind']}>
+                <Link href="/works/attendance-manager" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+                  <Image
+                    src="/img/works/attendance-manager.jpg"
+                    alt="勤怠管理アプリ"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </Link>
+              </Work>
             </ScrollReveal>
           </li>
+
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
-            <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/hakuryusha-oshibori" className="block relative w-full aspect-[16/9]">
-                <Image
-                  src="/img/works/hakuryusha.jpg"
-                  alt="有限会社 白龍社 様"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </Link>
-            </ScrollReveal>
-            <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
-              <div className="">
-                <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Corporate Site</p>
-                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">有限会社 白龍社 様</p>
-                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Coding & Programing</p>
-              </div>
+            <ScrollReveal move="bottom" delay={200}>
+              <Work productType="Corporate Site" productName="有限会社 白龍社 様" environment={['Photoshop', 'HTML', 'CSS', 'JavaScript']}>
+                <Link href="/works/hakuryusha-oshibori" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+                  <Image
+                    src="/img/works/hakuryusha.jpg"
+                    alt="有限会社 白龍社 様"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </Link>
+              </Work>
             </ScrollReveal>
           </li>
+
           <li className="w-full mb-10 duration-300 hover:scale-[0.97]">
-            <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/naomorphosis" className="block relative w-full aspect-[16/9]">
-                <Image
-                  src="/img/common/og_image.jpg"
-                  alt="ポートフォリオサイト"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </Link>
-            </ScrollReveal>
-            <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
-              <div className="">
-                <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Portfolio Site</p>
-                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">ポートフォリオ</p>
-                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
-              </div>
+            <ScrollReveal move="bottom" delay={200}>
+              <Work productType="Portfolio Site" productName="ポートフォリオ" environment={['TypeScript', 'Next.js', 'Tailwind']}>
+                <Link href="/works/naomorphosis" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+                  <Image
+                    src="/img/common/og_image.jpg"
+                    alt="ポートフォリオサイト"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </Link>
+              </Work>
             </ScrollReveal>
           </li>
+
           {/* <li className="w-full duration-300 hover:scale-[0.97]">
-            <ScrollReveal move="bottom" delay={200} className="mb-2 rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
-              <Link href="/works/#blog" className="block relative w-full aspect-[16/9]">
-                <Image
-                  src="/img/works/naomaru-blog.jpg"
-                  alt="なおまるブログ"
-                  fill
-                  style={{ objectFit: 'cover' }}
-                />
-              </Link>
-            </ScrollReveal>
-            <ScrollReveal move="bottom" delay={200} className="w-4/6 ml-auto">
-              <div className="">
-                <p className="text-right font-bold tracking-wide leading-relaxed pr-1">Blog Site</p>
-                <p className="text-right font-bold tracking-wide leading-relaxed border-b-tertiaryColor border-b pr-1">ブログ</p>
-                <p className="text-right font-bold text-xs pt-0.5 tracking-wide leading-relaxed pr-1">Design & Programing</p>
-              </div>
+            <ScrollReveal move="bottom" delay={200} className="p-7">
+              <Work productType="Blog Site" productName="個人ブログ" environment={['JavaScript', 'Next.js', 'microCMS']}>
+                <Link href="/works/naomaru-blog" className="block relative mb-3 w-full aspect-[16/9] rounded-lg overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.1)]">
+                  <Image
+                    src="/img/works/naomaru-blog.jpg"
+                    alt="なおまるブログ"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </Link>
+              </Work>
+              <Btn link="/works/naomaru-blog" text="詳細を見る" />
             </ScrollReveal>
           </li> */}
+
         </ul>
         <ScrollReveal move="bottom" delay={200}>
           <Btn link="/works" text="and more" />

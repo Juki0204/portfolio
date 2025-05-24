@@ -4,6 +4,7 @@ import Profile from "@/components/Common/Profile";
 import SecTitle from "@/components/Common/SecTitle";
 
 import ScrollReveal from "@/components/Common/ScrollReveal";
+import Skills from "@/components/Main/Skills";
 
 export default function Home() {
   const now = new Date();
@@ -88,25 +89,20 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200}>
-          <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-3 pb-1 px-2 flex gap-3">
-            <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Design</li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/photoshop_icon.png"
-                alt="photoshop"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/figma_icon.png"
-                alt="figma"
-                width={50}
-                height={50}
-              />
-            </li>
-          </ul>
+          <Skills title="Design">
+            <Image
+              src="/img/about/photoshop_icon.png"
+              alt="photoshop"
+              width={50}
+              height={50}
+            />
+            <Image
+              src="/img/about/figma_icon.png"
+              alt="figma"
+              width={50}
+              height={50}
+            />
+          </Skills>
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
@@ -121,33 +117,26 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200}>
-          <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-3 pb-1 px-2 flex gap-3">
-            <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Coding</li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/html_icon.png"
-                alt="html"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/css_icon.png"
-                alt="css"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/sass_icon.png"
-                alt="sass"
-                width={50}
-                height={50}
-              />
-            </li>
-          </ul>
+          <Skills title="Coding">
+            <Image
+              src="/img/about/html_icon.png"
+              alt="html"
+              width={50}
+              height={50}
+            />
+            <Image
+              src="/img/about/css_icon.png"
+              alt="css"
+              width={50}
+              height={50}
+            />
+            <Image
+              src="/img/about/sass_icon.png"
+              alt="sass"
+              width={50}
+              height={50}
+            />
+          </Skills>
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
@@ -163,33 +152,26 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200}>
-          <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-3 pb-1 px-2 flex gap-3">
-            <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Programing</li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/js_icon.png"
-                alt="javascript"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/ts_icon.png"
-                alt="typescript"
-                width={50}
-                height={50}
-              />
-            </li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/react_icon.png"
-                alt="react"
-                width={50}
-                height={50}
-              />
-            </li>
-          </ul>
+          <Skills title="Programing">
+            <Image
+              src="/img/about/js_icon.png"
+              alt="javascript"
+              width={50}
+              height={50}
+            />
+            <Image
+              src="/img/about/ts_icon.png"
+              alt="typescript"
+              width={50}
+              height={50}
+            />
+            <Image
+              src="/img/about/react_icon.png"
+              alt="react"
+              width={50}
+              height={50}
+            />
+          </Skills>
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
@@ -201,17 +183,14 @@ export default function Home() {
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200}>
-          <ul className="border-b-2 border-tertiaryColor w-full mx-auto mb-3 pb-1 px-2 flex gap-3">
-            <li className="font-bold text-lg flex items-end w-2/5 tracking-wider">Qualification</li>
-            <li className="w-10 aspect-square flex items-center">
-              <Image
-                src="/img/about/technician_icon.png"
-                alt="WEBデザイン技能士"
-                width={50}
-                height={50}
-              />
-            </li>
-          </ul>
+          <Skills title="Qualification">
+            <Image
+              src="/img/about/technician_icon.png"
+              alt="WEBデザイン技能士"
+              width={50}
+              height={50}
+            />
+          </Skills>
         </ScrollReveal>
 
         <ScrollReveal move="left" delay={200} className="px-2 mb-10">
